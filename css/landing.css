@@ -1,4 +1,20 @@
-html,body{
-    background: #121212;
-    color: whitesmoke;
+html,
+body {
+  background: #121212;
+  color: whitesmoke;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font: "Roboto";
 }
+*{
+  border: 1px solid red;
+}
+
+.max-height {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
