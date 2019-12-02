@@ -28,22 +28,22 @@
         <h1 class="text-center"><u>APPLY TO ENIGMA</u></h1>
         <small class="text-center form-text text-muted">*fields in <b>bold</b> are required.</small>
         <div class="container">
-            <form method="POST">
+            <form>
                 <div class="form-group">
                     <label for="name"><b>Full Name</b></label>
-                    <input type="text" class="form-control" name="name" required>
+                    <input type="text" id="name" class="form-control" name="name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email"><b>Email address</b></label>
-                    <input type="email" class="form-control" name="email" required>
+                    <input type="email" id = "email" class="form-control" name="email" required>
                     <small class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
 
                 <div class="form-group">
                     <label for="regno"><b>Registration Number</b></label>
-                    <input type="text" class="form-control" name="regno" required>
+                    <input type="number" id="regno" class="form-control" name="regno" required>
                     <small class="form-text text-muted">Type in your Manipal Student Registration
                         Number.</small>
                 </div>
@@ -61,7 +61,7 @@
                 <hr>
                 <div class="form-group">
                     <label for="preference1"><b>1st Preference</b></label>
-                    <select class="form-control">
+                    <select class="form-control" name="preference1" id="preference1">
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
                         <option>Artificial Intelligence Research</option>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="form-group">
                     <label for="preference2"><b>2nd Preference</b></label>
-                    <select class="form-control">
+                    <select class="form-control" name="preference2" id="preference2">
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
                         <option>Artificial Intelligence Research</option>
@@ -87,59 +87,72 @@
                 <hr>
                 <div class="form-group">
                     <label for="skillset">Technical Skillsets and Experience</label>
-                    <textarea class="form-control" rows="10"></textarea>
+                    <textarea class="form-control" rows="10" name="skillset" id="skillset"></textarea>
                     <small class="form-text text-muted">Leave this blank if you plan to start ground up from the
                         learning phase
                         .</small>
                 </div>
                 <div class="form-group">
                     <label for="hobbies">Hobbies</label>
-                    <textarea class="form-control" rows="4"></textarea>
+                    <textarea class="form-control" rows="4" name="hobbies" id="hobbies"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="situation"><b>Assuming you're a core team member, how would you contribute to the club?</b></label>
-                    <textarea class="form-control" rows="7" required>
+                    <label for="situation"><b>Assuming you're a core team member, how would you contribute to the
+                            club?</b></label>
+                    <textarea class="form-control" rows="7" name="situation" id="situation" required>
                     </textarea>
                 </div>
 
-                <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields blank.</h5>
-                
+                <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields
+                    blank.</h5>
+
                 <div class="form-group">
-                        <label for="github">Github Link</label>
-                        <input type="text" class="form-control" name="github" >
+                    <label for="github">Github Link</label>
+                    <input type="text" class="form-control" name="github" id="github">
                 </div>
                 <div class="form-group">
-                        <label for="codepen">Codepen Link</label>
-                        <input type="text" class="form-control" name="codepen" >
+                    <label for="codepen">Codepen Link</label>
+                    <input type="text" class="form-control" name="codepen" id="codepen">
                 </div>
                 <div class="form-group">
-                        <label for="kaggle">Kaggle Link</label>
-                        <input type="text" class="form-control" name="kaggle" >
+                    <label for="kaggle">Kaggle Link</label>
+                    <input type="text" class="form-control" name="kaggle" id="kaggle">
                 </div>
                 <div class="form-group">
-                        <label for="other1">Other Link</label>
-                        <input type="text" class="form-control" name="other1" >
+                    <label for="other1">Other Link</label>
+                    <input type="text" class="form-control" name="other1" id="other1">
                 </div>
                 <div class="form-group">
-                        <label for="other2">Other Link</label>
-                        <input type="text" class="form-control" name="other2" >
+                    <label for="other2">Other Link</label>
+                    <input type="text" class="form-control" name="other2" id="other2">
                 </div>
                 <div class="form-group">
-                        <label for="other3">Other Link</label>
-                        <input type="text" class="form-control" name="other3" >
+                    <label for="other3">Other Link</label>
+                    <input type="text" class="form-control" name="other3" id="other3">
                 </div>
 
                 <hr>
 
-                <h5>You might want to check your form again. Review your form as you won't be able to change anything later.</h5>
+                <h5>You might want to check your form again. Review your form as you won't be able to change anything
+                    later.</h5>
 
-                <button type="submit" class="btn btn-dark">SUBMIT AND APPLY</button>
+                <button type="submit" id="submit" class="btn btn-dark">SUBMIT AND APPLY</button>
 
                 <hr>
             </form>
         </div>
     </main>
+
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- Products -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+    <script type="text/javascript" src="backend/app.js"></script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -152,6 +165,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
