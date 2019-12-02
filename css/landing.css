@@ -8,9 +8,6 @@ body {
   font: "Roboto";
 }
 
-*{
-  border: 1px solid red;
-}
 
 section{
   border: 1px solid yellow;
