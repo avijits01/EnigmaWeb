@@ -6,6 +6,15 @@ body {
   color: whitesmoke;
 }
 
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 .p-2 {
   color: #7c7c7c;
   font-size: 12px;

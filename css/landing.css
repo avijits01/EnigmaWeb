@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
 html,
 body {
   background: #121212;
@@ -8,13 +10,37 @@ body {
   font: "Roboto";
 }
 
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
 
+.p-2 {
+  color: #7c7c7c;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Poppins";
+  line-height: 80px;
+  text-transform: uppercase;
+}
 
+.p-2:first-child {
+  font-family: "Poppins";
+  line-height: 80px;
+  margin-left: 2em;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
 .max-height {
   height: 100vh;
   margin: 0;
   padding: 0;
 }
-
-
