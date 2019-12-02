@@ -36,7 +36,7 @@ submitButton.addEventListener("click", function() {
     var docRef = firestore.collection("FORM_SUBMISSION_DATA").doc(mail.value);
 
     docRef
-      .set({
+      .add({
         name: fullName,
         email: emailid,
         regNo: registerNo,
