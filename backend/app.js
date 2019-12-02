@@ -26,11 +26,11 @@ submitButton.addEventListener("click", function() {
   } else if (!registerNo) {
     regno.focus();
   } else if (!pref1) {
-    pref1.focus();
+    preference1.focus();
   } else if (!pref2) {
-    pref2.focus();
-  } else if (!situation) {
-    situation.focus();
+    preference2.focus();
+  } else if (!situation || situation=="") {
+      paragraph.focus();
   } else {
     console.log("reached function");
     var docRef = firestore.collection("FORM_SUBMISSION_DATA").doc(mail.value);
