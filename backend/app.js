@@ -1,17 +1,4 @@
-var firebaseConfig = {
-  apiKey: "AIzaSyC2kf_hhHAx5w6IWsz-AkfcCxm0JwmlJzk",
-  authDomain: "theenigmadev.firebaseapp.com",
-  databaseURL: "https://theenigmadev.firebaseio.com",
-  projectId: "theenigmadev",
-  storageBucket: "theenigmadev.appspot.com",
-  messagingSenderId: "921345817660",
-  appId: "1:921345817660:web:9f9b53dfe2329a327a9739",
-  measurementId: "G-B7R1EHRDMD"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-var firestore = firebase.firestore();
+const firestore = firebase.firestore();
 
 var submitButton = document.getElementById("submit");
 
@@ -30,7 +17,7 @@ submitButton.addEventListener("click", function() {
   const pref1 = preference1.value;
   const pref2 = preference2.value;
   const situation = paragraph.value;
-  console.log(registerNo+ pref1 + pref2);
+  console.log(fullName);
 
   if (!fullName) {
     fname.focus();

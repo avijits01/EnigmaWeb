@@ -36,7 +36,7 @@
 
                 <div class="form-group">
                     <label for="email"><b>Email address</b></label>
-                    <input type="email" id = "email" class="form-control" name="email" required>
+                    <input type="email" id="email" class="form-control" name="email" required>
                     <small class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
@@ -145,11 +145,31 @@
     </main>
 
     <!-- The core Firebase JS SDK -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 
-    <!-- Products -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCZZwa4WhA7HPV_t3KLYre-2nYVEHJfcwg",
+            authDomain: "enigma-9c467.firebaseapp.com",
+            databaseURL: "https://enigma-9c467.firebaseio.com",
+            projectId: "enigma-9c467",
+            storageBucket: "enigma-9c467.appspot.com",
+            messagingSenderId: "503882261764",
+            appId: "1:503882261764:web:03e1a670cc22bbf83fdc51",
+            measurementId: "G-J0K7KZXEWX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
 
     <script type="text/javascript" src="backend/app.js"></script>
 
