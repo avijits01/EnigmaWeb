@@ -2,14 +2,20 @@ const firestore = firebase.firestore();
 
 var submitButton = document.getElementById("submit");
 
-const fname = document.querySelector("#name");
-const mail = document.querySelector("#email");
-const regno = document.querySelector("#regno");
-const preference1 = document.querySelector("#preference1");
-const preference2 = document.querySelector("#preference2");
-const paragraph = document.querySelector("#situation");
+const fname = document.getElementById("name");
+const mail = document.getElementById("email");
+const regno = document.getElementById("regno");
+const preference1 = document.getElementById("preference1");
+const preference2 = document.getElementById("preference2");
+const paragraph = document.getElementById("situation");
 
-submitButton.addEventListener("click", function() {
+ document
+  .getElementById("form")
+  .addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
   console.log("Form submitted.");
   const fullName = fname.value;
   const emailid = mail.value;
@@ -29,11 +35,11 @@ submitButton.addEventListener("click", function() {
     preference1.focus();
   } else if (!pref2) {
     preference2.focus();
-  } else if (!situation || situation=="") {
-      paragraph.focus();
+  } else if (!situation || situation == "") {
+    paragraph.focus();
   } else {
     console.log("reached function");
-    var docRef = firestore.collection("FORM_SUBMISSION_DATA").doc(mail.value);
+    var docRef = firestore.collection("RECRUITMENTS").doc(mail.value);
 
     docRef
       .set({
@@ -53,4 +59,4 @@ submitButton.addEventListener("click", function() {
         console.log(error);
       });
   }
-});
+}

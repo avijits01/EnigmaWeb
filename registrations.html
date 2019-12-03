@@ -28,7 +28,7 @@
         <h1 class="text-center"><u>APPLY TO ENIGMA</u></h1>
         <small class="text-center form-text text-muted">*fields in <b>bold</b> are required.</small>
         <div class="container">
-            <form>
+            <form id="form">
                 <div class="form-group">
                     <label for="name"><b>Full Name</b></label>
                     <input type="text" id="name" class="form-control" name="name" required>
@@ -61,7 +61,7 @@
                 <hr>
                 <div class="form-group">
                     <label for="preference1"><b>1st Preference</b></label>
-                    <select class="form-control" name="preference1" id="preference1">
+                    <select class="form-control" name="preference1" id="preference1" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="form-group">
                     <label for="preference2"><b>2nd Preference</b></label>
-                    <select class="form-control" name="preference2" id="preference2">
+                    <select class="form-control" name="preference2" id="preference2" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
@@ -84,7 +84,7 @@
 
                 <h5 class="mt-lg-5"><strong>Answer the following questions carefully.</strong><br>
                     This is the most important part of the application and is based on your profile.
-                    <br>Tell us as much as you can about your skillsets.
+                    <br>Tell us as much as you can about your skillsets. Attach links, if relevant.
                 </h5>
                 <hr>
                 <div class="form-group">
@@ -102,8 +102,7 @@
                 <div class="form-group">
                     <label for="situation"><b>Assuming you're a core team member, how would you contribute to the
                             club?</b></label>
-                    <textarea class="form-control" rows="7" name="situation" id="situation" required>
-                    </textarea>
+                    <textarea class="form-control" rows="5" name="situation" id="situation" aria-required="true" required></textarea>
                 </div>
 
                 <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields
@@ -139,8 +138,8 @@
                 <h5>You might want to check your form again. Review your form as you won't be able to change anything
                     later.</h5>
                 <hr>
+                <button type="submit" id="submit" class="btn btn-dark">SUBMIT AND APPLY</button>
             </form>
-            <button type="submit" id="submit" class="btn btn-dark">SUBMIT AND APPLY</button>
 
         </div>
     </main>
