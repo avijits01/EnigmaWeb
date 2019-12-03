@@ -26,7 +26,7 @@
 
     <main class="mb-5">
         <h1 class="text-center"><u>APPLY TO ENIGMA</u></h1>
-        <small class="text-center form-text text-muted">*fields in <b>bold</b> are required.</small>
+        <small class="text-center form-text text-muted">*required.</small>
         <div class="container">
             <form id="form" method="POST">
                 <div class="form-group">
@@ -46,6 +46,11 @@
                     <input type="number" id="regno" class="form-control" name="regno" required>
                     <small class="form-text text-muted">Type in your Manipal Student Registration
                         Number.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber"><b>Phone Number</b></label>
+                    <input type="number" id="phoneNumber" class="form-control" name="phoneNumber" required>
+                    <small class="form-text text-muted">We won't share it with any third parties.</small>
                 </div>
 
                 <hr>
@@ -102,7 +107,8 @@
                 <div class="form-group">
                     <label for="situation"><b>Assuming you're a core team member, how would you contribute to the
                             club?</b></label>
-                    <textarea class="form-control" rows="5" name="situation" id="situation" aria-required="true" required></textarea>
+                    <textarea class="form-control" rows="5" name="situation" id="situation" aria-required="true"
+                        required></textarea>
                 </div>
 
                 <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields
