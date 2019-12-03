@@ -9,9 +9,20 @@ const preference1 = document.getElementById("preference1");
 const preference2 = document.getElementById("preference2");
 const paragraph = document.getElementById("situation");
 
- document
-  .getElementById("form")
-  .addEventListener("submit", submitForm);
+//NON-COMPULSORY FIELDS
+const skillset = document.getElementById("skillset");
+const hobbies = document.getElementById("hobbies");
+
+
+const github = document.getElementById("github");
+const codepen = document.getElementById("codepen");
+const kaggle = document.getElementById("kaggle");
+
+const other1 = document.getElementById("other1");
+const other2 = document.getElementById("other2");
+const other3 = document.getElementById("other3");
+
+document.getElementById("form").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
@@ -48,12 +59,19 @@ function submitForm(e) {
         regNo: registerNo,
         firstPreference: pref1,
         secondPreference: pref2,
-        club_contribution: situation
+        club_contribution: situation,
+        skills: skillset.value,
+        hobby: hobbies.value,
+        githubLink: github.value,
+        kaggleLink: kaggle.value,
+        codepenLink: codepen.value,
+        otherLinks1: other1.value,
+        otherLinks2: other2.value,
+        otherLinks3: other3.value
       })
       .then(function() {
-        alert(
-          "Thanks! We have received the form. You will now be redirected to the Enigma page"
-        );
+        alert("Thanks! We have received the form.");
+        window.location.replace("http://thattechedguy.github.io/EnigmaWeb/");
       })
       .catch(function(error) {
         console.log(error);
