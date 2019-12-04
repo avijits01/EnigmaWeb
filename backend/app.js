@@ -1,5 +1,6 @@
 const firestore = firebase.firestore();
 
+
 var submitButton = document.getElementById("submit");
 
 const fname = document.getElementById("name");
