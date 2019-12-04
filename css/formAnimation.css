@@ -1,0 +1,103 @@
+.divider {
+	width: 100%;
+	height: 10vh;
+	fill: #f5f5f5;
+}
+
+header {
+	background: linear-gradient(#ffffff, #f5f5f5);
+}
+header div.d-flex.flex-row.mb-3 {
+	margin: 0 !important;
+}
+
+body::after {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 66, 105);
+	background: radial-gradient(
+		circle,
+		rgba(0, 66, 105, 1) 0%,
+		rgba(0, 4, 47, 1) 100%
+	);
+}
+
+main {
+	color: #fff;
+	margin-top: 2em;
+}
+
+/* ============ FORM ANIMATION SPECIFIC CSS BELOW ================ */
+
+:root {
+	--focusColor: #5fd693;
+	--placeholderColor: #687683;
+}
+
+.txtInput {
+	margin: 3em;
+	position: relative;
+}
+.txtBox {
+	width: 100%;
+	padding: 7px 10px;
+	border: none;
+	border-bottom: 2px solid white;
+	background: transparent;
+	color: white;
+	caret-color: var(--focusColor);
+	font-size: 1.2em;
+	position: relative;
+}
+
+.txtBox:focus {
+	border-bottom: 2px solid var(--focusColor);
+	outline: 0;
+	transition: all 0.3s cubic-bezier(0.75, 0.25, 0.07, 0.95);
+}
+
+.txtArea {
+	width: 100%;
+	padding: 7px 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: transparent;
+	color: white;
+	caret-color: var(--focusColor);
+	font-size: 1.2em;
+	position: relative;
+}
+
+.txtArea:focus {
+	border: 1px solid var(--focusColor);
+	outline: 0;
+	transition: all 0.3s cubic-bezier(0.75, 0.25, 0.07, 0.95);
+}
+
+.placeholder {
+	color: var(--placeholderColor);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.75, 0.25, 0.07, 0.95);
+}
+
+.focused {
+	left: 0;
+	top: -15px;
+	font-size: 0.8em;
+	color: var(--focusColor);
+}
+
+.txtArea + .focused {
+	left: 0px;
+	top: -25px;
+	font-size: 0.8em;
+	color: var(--focusColor);
+}

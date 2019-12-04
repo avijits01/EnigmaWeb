@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/registrations.css">
+    <link rel="stylesheet" type="text/css" href="css/formAnimation.css">
 
     <title>Enigma - Apply</title>
 </head>
@@ -24,49 +25,55 @@
         </div>
     </header>
 
+    <!-- HORIZONTAL DIVIDER -->
+    <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
+    <!-- /HORIZONTAL DIVIDER -->
+
     <main class="mb-5">
-        <h1 class="text-center"><u>APPLY TO ENIGMA</u></h1>
+        <h1 class="text-center"><u>Registration Form</u></h1>
         <small class="text-center form-text text-muted">*required.</small>
         <div class="container">
             <form id="form" method="POST">
-                <div class="form-group">
-                    <label for="name"><b>Full Name</b></label>
-                    <input type="text" id="name" class="form-control" name="name" required>
+                <div class="form-group txtInput">
+                    <input type="text" id="name" class="txtBox" name="name" required>
+                    <label for="name" class="placeholder"><b>Full Name</b></label>
                 </div>
 
-                <div class="form-group">
-                    <label for="email"><b>Email address</b></label>
-                    <input type="email" id="email" class="form-control" name="email" required>
-                    <small class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
+                <div class="form-group txtInput">
+                    <input type="email" id="email" class="txtBox" name="email" required>
+                    <label for="email" class="placeholder"><b>Email address</b></label>
+                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                
+                <div class="form-group txtInput">
+                    <input type="number" id="regno" class="txtBox" name="regno" required>
+                    <label for="regno" class="placeholder"><b>Registration Number</b></label>
+                    <small class="form-text text-muted">Type in your Manipal Student Registration Number.</small>
                 </div>
 
-                <div class="form-group">
-                    <label for="regno"><b>Registration Number</b></label>
-                    <input type="number" id="regno" class="form-control" name="regno" required>
-                    <small class="form-text text-muted">Type in your Manipal Student Registration
-                        Number.</small>
-                </div>
-                <div class="form-group">
-                    <label for="phoneNumber"><b>Phone Number</b></label>
-                    <input type="number" id="phoneNumber" class="form-control" name="phoneNumber" required>
+                <div class="form-group txtInput">
+                    <input type="number" id="phoneNumber" class="txtBox" name="phoneNumber" required>
+                    <label for="phoneNumber" class="placeholder"><b>Phone Number</b></label>
                     <small class="form-text text-muted">We won't share it with any third parties.</small>
                 </div>
 
                 <hr>
-                <h5 class="mt-lg-5">
+                <h2 class="mt-lg-5">
                     <strong>Choose your preferred departments.</strong><br>
+                </h2>
+                <p>
                     It is to be noted that you can participate in any and all of the projects that Enigma undertakes.
                     Your preferred department is just one where you'll 'probably' spend most of your time doing projects
                     or
                     learning new things.
                     We want the inner workings of Enigma to be as flexible as possible.
                     <b>We recommend you choose one based on your skillsets.</b>
-                </h5>
-                <hr>
-                <div class="form-group">
+                </p>
+                <div class="form-group txtInput">
                     <label for="preference1"><b>1st Preference</b></label>
-                    <select class="form-control" name="preference1" id="preference1" required>
+                    <select class="txtBox" name="preference1" id="preference1" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
@@ -75,9 +82,9 @@
                         <option>Let us choose one for you based on your profile.</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group txtInput">
                     <label for="preference2"><b>2nd Preference</b></label>
-                    <select class="form-control" name="preference2" id="preference2" required>
+                    <select class="txtBox" name="preference2" id="preference2" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
                         <option>Front End Designing</option>
@@ -86,57 +93,61 @@
                         <option>Let us choose one for you based on your profile.</option>
                     </select>
                 </div>
+                <hr>
 
-                <h5 class="mt-lg-5"><strong>Answer the following questions carefully.</strong><br>
+                <h2 class="mt-lg-5">
+                    <strong>Answer the following questions carefully.</strong><br>
+                </h2>
+                <p>
                     This is the most important part of the application and is based on your profile.
                     <br>Tell us as much as you can about your skillsets. Attach links, if relevant.
-                </h5>
+                </p>
                 <hr>
-                <div class="form-group">
-                    <label for="skillset">Technical Skillsets and Experience</label>
-                    <textarea class="form-control" rows="10" name="skillset" id="skillset"></textarea>
+                <div class="txtInput">
+                    <textarea class="txtArea" rows="10" name="skillset" id="skillset"></textarea>
+                    <label for="skillset" class="placeholder">Technical Skillsets and Experience</label>
                     <small class="form-text text-muted">Leave this blank if you plan to start ground up from the
                         learning phase
                         .</small>
                 </div>
-                <div class="form-group">
-                    <label for="hobbies">Hobbies</label>
-                    <textarea class="form-control" rows="4" name="hobbies" id="hobbies"></textarea>
+                <div class="txtInput">
+                    <textarea class="txtArea" rows="4" name="hobbies" id="hobbies"></textarea>
+                    <label for="hobbies" class="placeholder">Hobbies</label>
                 </div>
 
-                <div class="form-group">
-                    <label for="situation"><b>Assuming you're a core team member, how would you contribute to the
-                            club?</b></label>
-                    <textarea class="form-control" rows="5" name="situation" id="situation" aria-required="true"
+                <div class="txtInput">
+                    <textarea class="txtArea" rows="5" name="situation" id="situation" aria-required="true"
                         required></textarea>
+                    <label for="situation" class="placeholder"><b>Assuming you're a core team member, how would you contribute to the
+                            club?</b></label>
                 </div>
 
                 <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields
                     blank.</h5>
 
-                <div class="form-group">
-                    <label for="github">Github Link</label>
-                    <input type="text" class="form-control" name="github" id="github">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="github" id="github">
+                    <label for="github" class="placeholder">Github Link</label>
                 </div>
-                <div class="form-group">
-                    <label for="codepen">Codepen Link</label>
-                    <input type="text" class="form-control" name="codepen" id="codepen">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="codepen" id="codepen">
+                    <label for="codepen" class="placeholder">Codepen Link</label>
                 </div>
-                <div class="form-group">
-                    <label for="kaggle">Kaggle Link</label>
-                    <input type="text" class="form-control" name="kaggle" id="kaggle">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="kaggle" id="kaggle">
+                    <label for="kaggle" class="placeholder">Kaggle Link</label>
                 </div>
-                <div class="form-group">
-                    <label for="other1">Other Link</label>
-                    <input type="text" class="form-control" name="other1" id="other1">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="other1" id="other1">
+                    <label for="other1" class="placeholder">Other Link</label>
                 </div>
-                <div class="form-group">
-                    <label for="other2">Other Link</label>
-                    <input type="text" class="form-control" name="other2" id="other2">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="other2" id="other2">
+                    <label for="other2" class="placeholder">Other Link</label>
                 </div>
-                <div class="form-group">
-                    <label for="other3">Other Link</label>
-                    <input type="text" class="form-control" name="other3" id="other3">
+                <div class="form-group txtInput">
+                    <input type="text" class="txtBox" name="other3" id="other3">
+                    <label for="other3" class="placeholder">Other Link</label>
                 </div>
 
                 <hr>
@@ -191,6 +202,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="/clientJS/formAnimation.js"></script>
 
 </body>
 
