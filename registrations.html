@@ -33,29 +33,29 @@
 
     <main class="mb-5">
         <h1 class="text-center"><u>Registration Form</u></h1>
-        <small class="text-center form-text text-muted">*required.</small>
+        <small class="text-center form-text text-muted"><span class="req-asterisk">*</span>required.</small>
         <div class="container">
             <form id="form" method="POST">
                 <div class="form-group txtInput">
                     <input type="text" id="name" class="txtBox" name="name" required>
-                    <label for="name" class="placeholder"><b>Full Name</b></label>
+                    <label for="name" class="placeholder"><b>Full Name <span class="req-asterisk">*</span></b></label>
                 </div>
 
                 <div class="form-group txtInput">
                     <input type="email" id="email" class="txtBox" name="email" required>
-                    <label for="email" class="placeholder"><b>Email address</b></label>
+                    <label for="email" class="placeholder"><b>Email address <span class="req-asterisk">*</span></b></label>
                     <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 
                 <div class="form-group txtInput">
                     <input type="number" id="regno" class="txtBox" name="regno" required>
-                    <label for="regno" class="placeholder"><b>Registration Number</b></label>
+                    <label for="regno" class="placeholder"><b>Registration Number <span class="req-asterisk">*</span></b></label>
                     <small class="form-text text-muted">Type in your Manipal Student Registration Number.</small>
                 </div>
 
                 <div class="form-group txtInput">
                     <input type="number" id="phoneNumber" class="txtBox" name="phoneNumber" required>
-                    <label for="phoneNumber" class="placeholder"><b>Phone Number</b></label>
+                    <label for="phoneNumber" class="placeholder"><b>Phone Number <span class="req-asterisk">*</span></b></label>
                     <small class="form-text text-muted">We won't share it with any third parties.</small>
                 </div>
 
@@ -72,7 +72,7 @@
                     <b>We recommend you choose one based on your skillsets.</b>
                 </p>
                 <div class="form-group txtInput">
-                    <label for="preference1"><b>1st Preference</b></label>
+                    <label for="preference1"><b>1st Preference <span class="req-asterisk">*</span></b></label>
                     <select class="txtBox" name="preference1" id="preference1" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
@@ -83,7 +83,7 @@
                     </select>
                 </div>
                 <div class="form-group txtInput">
-                    <label for="preference2"><b>2nd Preference</b></label>
+                    <label for="preference2"><b>2nd Preference <span class="req-asterisk">*</span></b></label>
                     <select class="txtBox" name="preference2" id="preference2" required>
                         <option></option>
                         <option>Full Stack Web & App Development</option>
@@ -119,7 +119,7 @@
                     <textarea class="txtArea" rows="5" name="situation" id="situation" aria-required="true"
                         required></textarea>
                     <label for="situation" class="placeholder"><b>Assuming you're a core team member, how would you contribute to the
-                            club?</b></label>
+                            club? <span class="req-asterisk">*</span></b></label>
                 </div>
 
                 <h5>Attach your code, undertaken projects or anything else if relevant. Otherwise, leave these fields
