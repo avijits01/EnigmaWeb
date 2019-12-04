@@ -110,6 +110,17 @@ main {
 	color: var(--focusColor);
 }
 
+@media (min-width: 480px) {
+	.placeholder.multi-line {
+		font-size: 0.8em;
+	}
+
+	.placeholder.multi-line.focused {
+		font-size: 0.7em;
+		top: -35px;
+	}
+}
+
 .urlInput {
 	margin-left: calc(3em + 66px);
 }
