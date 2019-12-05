@@ -38,7 +38,7 @@
 }
 
 //recieve master process
-process.on("message", message => {
+process.on("message", (message) => {
   const uploaded = uploadToFirestore(message);
 
   process.send(uploaded);
