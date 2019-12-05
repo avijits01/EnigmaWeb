@@ -1,4 +1,3 @@
- function uploadToFirestore(data) {
   const firebase = require("firebase");
 
   var firebaseConfig = {
@@ -11,35 +10,32 @@
     appId: process.env.APPLICATION_ID,
     measurementId: process.env.MEASUREMENT_ID
   };
-
+  
   firebase.initializeApp(firebaseConfig);
 
-  var status = "FALSE";
-  //long running task at https://enigmadev.herokuapp.com/registrations.html
-  const db = firebase.firestore();
-
-  console.log("UPLOADING....");
-  console.log(data);
-
-  db
-    .collection("RECRUITMENT")
-    .doc(data.email)
-    .set(data)
-    .then(() => {
-      console.log("DOCUMENT SENT SUCCESSFULLY.");
-      status = "TRUE";
-      return status;
-    })
-    .catch(err => {
-      console.log("ERROR IN SENDING DOCUMENT" + err);
-      return status;
-    });
-
-}
 
 //recieve master process
-process.on("message", (message) => {
-  const uploaded = uploadToFirestore(message);
+process.on("message",async (data) => {
 
-  process.send(uploaded);
+    var status = "FALSE";
+    //long running task at https://enigmadev.herokuapp.com/registrations.html
+    const db = firebase.firestore();
+  
+    console.log("UPLOADING....");
+    console.log(data);
+  
+     db
+      .collection("RECRUITMENT")
+      .doc(data.email)
+      .set(data)
+      .then(() => {
+        console.log("DOCUMENT SENT SUCCESSFULLY.");
+        status = "TRUE";
+        process.send(status);
+      })
+      .catch(err => {
+        console.log("ERROR IN SENDING DOCUMENT" + err);
+        process.send(status);
+      });
+  
 });
