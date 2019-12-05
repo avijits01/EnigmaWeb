@@ -20,6 +20,7 @@ async function uploadToFirestore(data) {
   const db = firebase.firestore();
 
   console.log("UPLOADING....");
+  console.log(data);
 
   await db
     .collection("RECRUITMENT")
