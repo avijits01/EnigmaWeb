@@ -1,4 +1,4 @@
-async function uploadToFirestore(data) {
+ function uploadToFirestore(data) {
   const firebase = require("firebase");
 
   var firebaseConfig = {
@@ -28,17 +28,18 @@ async function uploadToFirestore(data) {
     .then(() => {
       console.log("DOCUMENT SENT SUCCESSFULLY.");
       status = "TRUE";
+      return status;
     })
     .catch(err => {
       console.log("ERROR IN SENDING DOCUMENT" + err);
+      return status;
     });
 
-  return status;
 }
 
 //recieve master process
 process.on("message", async message => {
-  const uploaded = await uploadToFirestore(message);
+  const uploaded = uploadToFirestore(message);
 
   process.send(uploaded);
 });
