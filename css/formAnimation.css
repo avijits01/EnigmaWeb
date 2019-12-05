@@ -110,12 +110,12 @@ main {
 	color: var(--focusColor);
 }
 
-@media (min-width: 480px) {
-	.placeholder.multi-line {
+@media only screen and (max-width: 480px) {
+	.multi-line.placeholder {
 		font-size: 0.8em;
 	}
 
-	.placeholder.multi-line.focused {
+	.multi-line.placeholder.focused {
 		font-size: 0.7em;
 		top: -35px;
 	}
