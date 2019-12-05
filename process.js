@@ -16,10 +16,12 @@ firebase.initializeApp(firebaseConfig);
 async function uploadToFirestore(data) {
 
   var status = "FALSE";
-  //long running task
+  //long running task at https://enigmadev.herokuapp.com/registrations.html
   const db = firebase.firestore();
 
-  db
+  console.log("UPLOADING....");
+
+  await db
     .collection("RECRUITMENT")
     .doc(data.email)
     .set(data)
