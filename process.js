@@ -15,7 +15,7 @@
 
 
 //recieve master process
-process.on("message",async (data) => {
+process.on("message", async (data) => {
 
     var status = "FALSE";
     //long running task at https://enigmadev.herokuapp.com/registrations.html
@@ -24,7 +24,7 @@ process.on("message",async (data) => {
     console.log("UPLOADING....");
     console.log(data);
   
-     db
+    db
       .collection("RECRUITMENT")
       .doc(data.email)
       .set(data)
