@@ -21,7 +21,7 @@
   console.log("UPLOADING....");
   console.log(data);
 
-  await db
+  db
     .collection("RECRUITMENT")
     .doc(data.email)
     .set(data)
@@ -38,7 +38,7 @@
 }
 
 //recieve master process
-process.on("message", async message => {
+process.on("message", message => {
   const uploaded = uploadToFirestore(message);
 
   process.send(uploaded);
