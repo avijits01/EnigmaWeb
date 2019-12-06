@@ -9,6 +9,8 @@
     "firebase": "^7.5.0",
     "firebase-admin": "^8.8.0",
     "http": "^0.0.0",
+    "http-delayed-response": "0.0.4",
+    "nodemailer": "^6.4.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
