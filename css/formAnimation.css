@@ -115,7 +115,7 @@ main {
 	color: var(--focusColor);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 766px) {
 	.multi-line.placeholder {
 		font-size: 0.8em;
 	}
