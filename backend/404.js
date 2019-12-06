@@ -41,5 +41,5 @@ setTimeout(function() {
 			clearInterval(revealInterval);
 			clearInterval(scrambleInterval);
 		}
-	}, 50);
+	}, 30);
 }, 1000);

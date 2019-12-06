@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-
-=======
 input {
 	-webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
 	-webkit-transition-delay: 9999s;
 }
->>>>>>> 5334bcec7e6cf6784771a4a8a1bedc774942e980
 
 small.text-center.form-text.text-muted {
 	color: lightgrey !important;
