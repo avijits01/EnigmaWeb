@@ -58,6 +58,19 @@ function handleData(json) {
       document.getElementById("captcha").style.color = "lightgreen";
     }
   }
-
   document.getElementById("captcha").innerHTML = warning;
+
+  if (json["mail"] == false) {
+    if (json["error"] == "mail_failed") {
+      warning =
+        "Something went wrong while submitting the form. Try again and if this still fails, contact developers.";
+      document.getElementById("error").innerHTML = warning;
+    }
+  } else {
+    if (json["mail"] == true && json["success"] == true) {
+      warning = "SUBMITTED. Please feel free to navigate somewhere else.";
+      document.getElementById("error").innerHTML = warning;
+      document.getElementById("error").style.color = "lightgreen";
+    }
+  }
 }
