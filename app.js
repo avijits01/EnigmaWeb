@@ -40,6 +40,10 @@ function handleData(json) {
   console.log("Reached warning function");
 
   var warning = json["error"];
+  if(warning == "Form Submitted")
+  document.getElementById("error").style = "lightgreen";
+
   
   document.getElementById("error").innerHTML = warning;
+
 }
