@@ -1,6 +1,8 @@
 form = document.querySelector("form");
 form.addEventListener("submit", onSubmit);
 
+
+
 function onSubmit(e) {
   e.preventDefault();
 
@@ -40,10 +42,10 @@ function handleData(json) {
   console.log("Reached warning function");
 
   var warning = json["error"];
-  if(warning == "Form Submitted")
-  document.getElementById("error").style = "lightgreen";
+  if (warning == "Form Submitted") {
+    document.getElementById("error").style = "lightgreen";
+    $('#submissionModal').modal();
+  }
 
-  
   document.getElementById("error").innerHTML = warning;
-
 }

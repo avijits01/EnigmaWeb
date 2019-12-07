@@ -32,3 +32,17 @@ a:hover {
   font-weight: 900;
   text-transform: uppercase;
 }
+
+.modal p{
+  color: black;
+}
+
+
+.modal h4{
+  color: black;
+}
+.modal-content{
+  text-align: left;
+}
+
+
