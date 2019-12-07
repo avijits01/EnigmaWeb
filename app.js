@@ -42,7 +42,7 @@ function handleData(json) {
   var warning = "";
 
   if (json["captcha"] == false) {
-    if (json.error == "captcha_empty") {
+    if (json["error"] == "captcha_empty") {
       warning = "Verification missing.";
       document.getElementById("captcha").innerHTML = warning;
     } else {
