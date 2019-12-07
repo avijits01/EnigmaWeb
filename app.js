@@ -39,38 +39,7 @@ function onSubmit(e) {
 function handleData(json) {
   console.log("Reached warning function");
 
-  var warning = "";
-
-  if (json["captcha"] == false) {
-    if (json["error"] == "captcha_empty") {
-      warning = "Verification missing.";
-      document.getElementById("captcha").innerHTML = warning;
-    } else {
-      warning = "Try verifing again";
-      document.getElementById("captcha").innerHTML = warning;
-    }
-  } else {
-    if (json["error"] == "captcha_verification_failure") {
-      warning = "Captcha verification failed. Try again or reload the page.";
-      document.getElementById("captcha").innerHTML = warning;
-    } else if (json["error"] == "") {
-      warning = "Captcha verification successful.";
-      document.getElementById("captcha").style.color = "lightgreen";
-    }
-  }
-  document.getElementById("captcha").innerHTML = warning;
-
-  if (json["mail"] == false) {
-    if (json["error"] == "mail_failed") {
-      warning =
-        "Something went wrong while submitting the form. Try again and if this still fails, contact developers.";
-      document.getElementById("error").innerHTML = warning;
-    }
-  } else {
-    if (json["mail"] == true && json["success"] == true) {
-      warning = "SUBMITTED. Please feel free to navigate somewhere else.";
-      document.getElementById("error").innerHTML = warning;
-      document.getElementById("error").style.color = "lightgreen";
-    }
-  }
+  var warning = json["error"];
+  
+  document.getElementById("error").innerHTML = warning;
 }
