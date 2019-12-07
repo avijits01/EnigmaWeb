@@ -16,32 +16,48 @@ function onSubmit(e) {
     formData[elements[i].name] = elements[i].value;
   }
 
-  document.getElementById("submit").addEventListener("click", function() {
-    this.disabled = true;
-  });
-  console.log(formData);
+  // document.getElementById("submit").addEventListener("click", function() {
+  //   this.disabled = true;
+  // });
 
   fetch("http://localhost:3000/submit", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
     method: "post",
-    body: formData
+    body: JSON.stringify(formData)
   })
     .then(res => res.json()) //response type
-    .then(data => console.log(data))//log the data;
-    .catch(err => console.log(err)); 
+    .then(data => {
+      console.log(data);
+      handleData(data);
+    }) //log the data;
+    .catch(err => console.log(err));
 }
 
-/*$(document).ready(function() {
-    $('#form').submit(function() {
-      $(this).ajaxSubmit({
-        error: function(xhr) {
-          status('Error: ' + xhr.status);
-        },
-       success: function(response) {
-        console.log(response);
-       }
-      });
-      //Very important line, it disable the page refresh.
-      return false;
-    });
-  });
-*/
+function handleData(json) {
+  console.log("Reached warning function");
+
+  var warning = "";
+
+  if (json["captcha"] == false) {
+    if (json.error == "captcha_empty") {
+      warning = "Verification missing.";
+      document.getElementById("captcha").innerHTML = warning;
+    } else {
+      warning = "Try verifing again";
+      document.getElementById("captcha").innerHTML = warning;
+    }
+  } else {
+    if (json["error"] == "captcha_verification_failure") {
+      warning = "Captcha verification failed. Try again or reload the page.";
+      document.getElementById("captcha").innerHTML = warning;
+    } else if (json["error"] == "") {
+      warning = "Captcha verification successful.";
+      document.getElementById("captcha").style.color = "lightgreen";
+    }
+  }
+
+  document.getElementById("captcha").innerHTML = warning;
+}
