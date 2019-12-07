@@ -20,7 +20,7 @@ function onSubmit(e) {
   //   this.disabled = true;
   // });
 
-  fetch("http://enigmadev.herokuapp/submit", {
+  fetch("https://enigmadev.herokuapp/submit", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
