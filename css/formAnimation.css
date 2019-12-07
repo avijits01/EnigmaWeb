@@ -1,7 +1,7 @@
-input {
+/* input {			// Fixes the Yellow BS that browsers put when autofilling but ruins the animations on the input elements
 	-webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
 	-webkit-transition-delay: 9999s;
-}
+} */
 
 small.text-center.form-text.text-muted {
 	color: lightgrey !important;
