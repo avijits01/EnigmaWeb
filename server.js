@@ -20,7 +20,6 @@ router.get("/AiR", function(req,res){
   res.sendFile(path.join(__dirname + "AiR.html"));
 });
 
-
 router.get("/landing", function(req, res) {
   res.sendFile(path.join(__dirname + "/landing.html"));
 });
