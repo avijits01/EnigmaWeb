@@ -1,12 +1,11 @@
 form = document.querySelector("form");
 form.addEventListener("submit", onSubmit);
 
-$(document).ready(function() {
-  $("#emailAddress").hide();
-  $("#phone").hide();
-  $("#longAnswer").hide();
-  $("#fullName").hide();
-});
+
+
+
+disableButton();
+
 
 function onSubmit(e) {
   e.preventDefault();
@@ -56,3 +55,4 @@ function handleData(json) {
 
   document.getElementById("error").innerHTML = warning;
 }
+
