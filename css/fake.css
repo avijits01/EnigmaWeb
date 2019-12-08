@@ -42,7 +42,9 @@
   border-bottom-right-radius: 5px;
 }
 
-.line {
+
+
+.line{
   position: relative;
   left: 50%;
   margin-left: -8.5em;
@@ -52,6 +54,22 @@
   white-space: nowrap;
   overflow: hidden;
   width: 0;
+}
+
+
+@media only screen and (max-width:374px){
+  .line{
+    font-size: 1em;
+  }
+
+  .fakeScreen{
+    width: 300px;
+  }
+
+  .fakeMenu{
+    width:300px;
+  }
+  
 }
 
 span {
