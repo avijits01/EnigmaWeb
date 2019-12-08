@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+	--headerOpacity: 1;
+	--headerScale: 1;
+}
+
+.video-header {
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+.video-header,
+.video-header video,
+.video-header .viewport-header {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.video-header video {
+	object-fit: cover;
+}
+.video-header .viewport-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	opacity: var(--headerOpacity);
+	transform: scale(var(--headerScale));
+}
+
+.grad {
+	background-color: #1a1a1a;
+}
+
+.grad::after {
+	background: radial-gradient(
+		circle at top,
+		rgba(81, 48, 87, 0.5),
+		rgba(25, 31, 44, 0.5)
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+
+html,
+body {
+	height: 100vh;
+	overflow-x: hidden;
+	color: whitesmoke;
+	font: "Roboto";
+}
+
+.club-sub {
+	font-family: "Syncopate", sans-serif;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.5vw;
+	line-height: 1.2;
+	font-size: 1.5vw;
+	text-align: center;
+	z-index: 15;
+}
+
+.club-name {
+	font-family: "Syncopate", sans-serif;
+	color: white;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+
+	display: block;
+	font-size: 5vw;
+	letter-spacing: -0.65vw;
+	z-index: 15;
+}
+
+.dep-name {
+	display: block;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.2vw;
+	/* width: auto; */
+
+	letter-spacing: 5px;
+	line-height: 1.2;
+	text-align: center;
+
+	/* margin: 0 30px; */
+	margin-top: 2em;
+	margin-bottom: 1em;
+	/* font-size: 1.5vw; */
+
+	color: white;
+	text-transform: uppercase;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+	/* z-index: -1; */
+}
+
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	/* Uncomment this so that the Particle Animation becomes interactive */
+	/* z-index: 10; */
+}
+
+svg {
+	z-index: 15;
+}
+
+@media only screen and (max-width: 780px) {
+	svg {
+		width: 25vw;
+		margin-right: 5vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	svg {
+		display: none;
+	}
+	.club-sub {
+		font-size: 4.5vw;
+	}
+
+	.club-name {
+		font-size: 15vw;
+	}
+
+	.dep-name {
+		font-size: 3.6vw;
+		letter-spacing: 15px;
+	}
+}
+
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+main {
+	background-image: radial-gradient(
+		circle at top,
+		rgba(81, 48, 87, 0.5),
+		rgba(54, 81, 139, 0.5)
+	);
+	background-color: #1a1a1a;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 1rem;
+	height: auto;
+	margin-top: 100vh;
+
+	color: white;
+	font-family: "Poppins";
+}
+main::before {
+	content: "";
+	width: 100vw;
+	height: 110vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	top: -100vh;
+}
+main p {
+	max-width: 900px;
+	margin: 5em auto;
+}
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+
+.shine {
+	background: #816406 -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(#816406),
+			to(#816406),
+			color-stop(0.5, #fff7d5)
+		) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+	color: rgba(240, 192, 37, 0.3);
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(240, 192, 37, 0.5);
+}
+
+@-webkit-keyframes shine {
+	0%,
+	10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}
