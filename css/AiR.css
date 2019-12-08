@@ -109,6 +109,7 @@ body {
 }
 
 canvas {
+	/* This Canvas Is Added by Particles.JS*/
 	display: block;
 	vertical-align: bottom;
 	/* z-index: -1; */
@@ -127,19 +128,19 @@ canvas {
 	/* z-index: 10; */
 }
 
-svg {
+.enigma-logo {
 	z-index: 15;
 }
 
 @media only screen and (max-width: 992px) {
-	svg {
+	.enigma-logo {
 		width: 25vw;
 		margin-right: 5vw;
 	}
 }
 
 @media only screen and (max-width: 780px) {
-	svg {
+	.enigma-logo {
 		display: none;
 	}
 	.club-sub {
