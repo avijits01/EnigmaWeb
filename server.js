@@ -92,11 +92,14 @@ app.post("/submit", function(req, res) {
     }
   });
 
+  var mail = JSON.stringify(req.body, null, "\t"); // stringify with tabs inserted at each level
+  mail = JSON.stringify(req.body, null, 4); // stringify with 4 spaces at each level
+
   var mailOptions = {
     from: "icasapp.team@gmail.com",
     to: "enigmadev.forms@gmail.com",
     subject: "[RECRUITMENT FORM]" + req.body.email + "->" + req.body.name,
-    text: JSON.stringify(req.body)
+    text: mail
   };
 
   transporter.sendMail(mailOptions, function(err, info) {
