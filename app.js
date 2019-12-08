@@ -5,9 +5,10 @@ $(document).ready(function() {
   $("#fullName").hide();
 
   if (localStorage.getItem("submitted") == "TRUE") {
-    alert("You have already submitted the form. You cannot make any changes now");
+    alert(
+      "You have already submitted the form. You cannot make any changes now"
+    );
   }
-
 });
 
 var formSubmitted = false;
@@ -18,14 +19,13 @@ form.addEventListener("submit", onSubmit);
 function onSubmit(e) {
   e.preventDefault();
 
-  resetForm();
-
   if (formSubmitted) return;
 
   if (localStorage.getItem("submitted") == "TRUE") {
     formSubmitted = true;
     //FORM WAS SUCCESSFULLY SUBMITTED
     $("#submissionModal").modal();
+    resetForm();
     return;
   }
 
@@ -88,6 +88,6 @@ function handleData(json) {
   document.getElementById("error").innerHTML = warning;
 }
 
-function resetForm(){
-  document.getElementById('form').reset();
+function resetForm() {
+  document.getElementById("form").reset();
 }
