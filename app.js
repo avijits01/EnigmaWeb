@@ -3,6 +3,11 @@ $(document).ready(function() {
   $("#phone").hide();
   $("#longAnswer").hide();
   $("#fullName").hide();
+
+  if (localStorage.getItem("submitted") == "TRUE") {
+    alert("You have already submitted the form. You cannot make any changes now");
+  }
+
 });
 
 var formSubmitted = false;
