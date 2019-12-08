@@ -18,6 +18,8 @@ form.addEventListener("submit", onSubmit);
 function onSubmit(e) {
   e.preventDefault();
 
+  resetForm();
+
   if (formSubmitted) return;
 
   if (localStorage.getItem("submitted") == "TRUE") {
@@ -73,6 +75,7 @@ function handleData(json) {
     formSubmitted = true;
     document.getElementById("error").style.color = "lightgreen";
     $("#submissionModal").modal();
+    resetForm();
 
     if (typeof Storage !== "undefined") {
       // Code for localStorage/sessionStorage.
@@ -83,4 +86,8 @@ function handleData(json) {
   }
 
   document.getElementById("error").innerHTML = warning;
+}
+
+function resetForm(){
+  document.getElementById('form').reset();
 }
