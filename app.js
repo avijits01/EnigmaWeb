@@ -10,11 +10,17 @@ var formSubmitted = false;
 form = document.querySelector("form");
 form.addEventListener("submit", onSubmit);
 
-
 function onSubmit(e) {
   e.preventDefault();
 
   if (formSubmitted) return;
+
+  if (localStorage.getItem("submitted") == "TRUE") {
+    formSubmitted = true;
+    //FORM WAS SUCCESSFULLY SUBMITTED
+    $("#submissionModal").modal();
+    return;
+  }
 
   if (
     $("#emailAddress").value ||
@@ -62,7 +68,12 @@ function handleData(json) {
     formSubmitted = true;
     document.getElementById("error").style.color = "lightgreen";
     $("#submissionModal").modal();
-  }else{
+
+    if (typeof Storage !== "undefined") {
+      // Code for localStorage/sessionStorage.
+      localStorage.setItem("submitted", "TRUE");
+    }
+  } else {
     formSubmitted = false;
   }
 
