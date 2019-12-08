@@ -1,22 +1,34 @@
+$(document).ready(function() {
+  $("#emailAddress").hide();
+  $("#phone").hide();
+  $("#longAnswer").hide();
+  $("#fullName").hide();
+});
+
+var formSubmitted = false;
+
 form = document.querySelector("form");
 form.addEventListener("submit", onSubmit);
-
-
-
-
-disableButton();
 
 
 function onSubmit(e) {
   e.preventDefault();
 
-  if ($("#emailAddress").value || $("#phone").value || $("#longAnswer").value)
+  if (formSubmitted) return;
+
+  if (
+    $("#emailAddress").value ||
+    $("#phone").value ||
+    $("#longAnswer").value ||
+    $("#fullName").value
+  )
     return;
-  
-  var elements = document.querySelectorAllvalue;
-  ("input:not(:disabled):not([readonly]):not([type=hidden])");
-  ",select:not(:disabled):not([readonly])" +
-    ",textarea:not(:disabled):not([readonly])";
+
+  var elements = document.querySelectorAll(
+    "input:not(:disabled):not([readonly]):not([type=hidden])" +
+      ",select:not(:disabled):not([readonly])" +
+      ",textarea:not(:disabled):not([readonly])"
+  );
 
   var formData = {};
 
@@ -24,10 +36,8 @@ function onSubmit(e) {
     formData[elements[i].name] = elements[i].value;
   }
 
-  // document.getElementById("submit").addEventListener("click", function() {
-  //   this.disabled = true;
-  // });
-
+  formSubmitted = true;
+  console.log("SUBMITTING FORM.....");
   fetch("https://enigmadev.herokuapp.com/submit", {
     headers: {
       Accept: "application/json",
@@ -49,10 +59,12 @@ function handleData(json) {
 
   var warning = json["error"];
   if (warning == "Form Submitted") {
-    document.getElementById("error").style = "lightgreen";
+    formSubmitted = true;
+    document.getElementById("error").style.color = "lightgreen";
     $("#submissionModal").modal();
+  }else{
+    formSubmitted = false;
   }
 
   document.getElementById("error").innerHTML = warning;
 }
-
