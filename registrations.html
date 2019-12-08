@@ -64,6 +64,9 @@
 
             <!--   FORM   -->
             <form id="form" method="POST" autocomplete="off">
+
+                <label id="fullName">Full Name: <input id="full_name"></label>
+
                 <div class="form-group txtInput">
                     <input type="text" id="name" class="txtBox" name="name" required>
                     <label for="name" class="placeholder"><b>Full Name <span class="req-asterisk">*</span></b></label>
@@ -76,12 +79,18 @@
                     <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
+                <label id="emailAddress">Email: <input id="email_add"></label>
+
+
                 <div class="form-group txtInput">
                     <input type="number" id="regno" class="txtBox" name="regno" required>
                     <label for="regno" class="placeholder"><b>Registration Number <span
                                 class="req-asterisk">*</span></b></label>
                     <small class="form-text text-muted">Type in your Manipal Student Registration Number.</small>
                 </div>
+
+                <label id="phone">Phone: <input id="phone"></label>
+
 
                 <div class="form-group txtInput">
                     <input type="number" id="phoneNumber" class="txtBox" name="phoneNumber" required>
@@ -145,6 +154,9 @@
                         .</small>
                 </div>
 
+                <label id="longAnswer">Email: <input id="long"></label>
+
+
                 <div class="txtInput">
                     <textarea class="txtArea" rows="5" name="situation" id="situation" aria-required="true"
                         required></textarea>
@@ -194,7 +206,7 @@
                 <h5>You might want to check your form again. Review your form as you won't be able to change anything
                     later.</h5>
 
-   
+
 
 
                 <button type="submit" id="submit" class="btn btn-dark">SUBMIT AND APPLY</button>

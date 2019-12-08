@@ -1,16 +1,23 @@
 form = document.querySelector("form");
 form.addEventListener("submit", onSubmit);
 
-
+$(document).ready(function() {
+  $("#emailAddress").hide();
+  $("#phone").hide();
+  $("#longAnswer").hide();
+  $("#fullName").hide();
+});
 
 function onSubmit(e) {
   e.preventDefault();
 
-  var elements = document.querySelectorAll(
-    "input:not(:disabled):not([readonly]):not([type=hidden])" +
-      ",select:not(:disabled):not([readonly])" +
-      ",textarea:not(:disabled):not([readonly])"
-  );
+  if ($("#emailAddress").value || $("#phone").value || $("#longAnswer").value)
+    return;
+  
+  var elements = document.querySelectorAllvalue;
+  ("input:not(:disabled):not([readonly]):not([type=hidden])");
+  ",select:not(:disabled):not([readonly])" +
+    ",textarea:not(:disabled):not([readonly])";
 
   var formData = {};
 
@@ -44,7 +51,7 @@ function handleData(json) {
   var warning = json["error"];
   if (warning == "Form Submitted") {
     document.getElementById("error").style = "lightgreen";
-    $('#submissionModal').modal();
+    $("#submissionModal").modal();
   }
 
   document.getElementById("error").innerHTML = warning;

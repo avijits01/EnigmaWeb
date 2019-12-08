@@ -36,6 +36,14 @@ app.use(cors());
 app.post("/submit", function(req, res) {
   console.log(req.body);
 
+  if(
+    !req.body.name ||
+    !req.body.email || 
+    !req.body.situation || 
+    !req.body.regNo || 
+    !req.body.phoneNumber 
+  )
+
   // g-recaptcha-response is the key that browser will generate upon form submit.
   // if its blank or null means user has not selected the captcha, so return the error.
   if (
