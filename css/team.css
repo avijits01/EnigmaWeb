@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    border: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+.team-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.team-card {
+    position: relative;
+    background: #1f1f1f;
+    width: 400px;
+    height: 75vh;
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2) 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.team-card-image-container {
+    margin: -2rem -2rem 1rem -2rem;
+}
+
+.card-line {
+    opacity: 0;
+    animation: LineFadeIn .8s .8s forwards ease-in;
+}
+
+.team-card-image {
+    opacity: 0;
+    animation: LineFadeIn .8s 1.4s forwards ease-in;
+}
+
+.card-title {
+    margin-top: 0px;
+}
+
+.card-content p {
+    letter-spacing: 0.2px;
+}
+
+.card-content {
+    opacity: 0;
+    margin: -1rem;
+    animation: ContentFadeIn .8s 1.6s forwards;
+}
+
+.card_svg {
+    position: absolute;
+    left: 0;
+    top: 205px;
+}
+
+@keyframes LineFadeIn {
+    0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300");
+        stroke: #fff;
+    }
+    50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300 ");
+        stroke: #888BFF;
+    }
+    100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #545581;
+    }
+}
+
+@keyframes ContentFadeIn {
+    0% {
+        transform: translate(-0.5rem, -0.5rem);
+        opacity: 0;
+        filter: blur(2px);
+    }
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
