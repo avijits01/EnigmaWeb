@@ -8,9 +8,6 @@ $(document).ready(function() {
   //CHECKING LOCAL STORAGE FOR SUCCESSFUL FORM SUBMISSIONS
   if (typeof Storage !== "undefined") {
     if (localStorage.getItem("submitted") == "TRUE") {
-      alert(
-        "You have already submitted the form. You cannot make any changes now."
-      );
       showLoader();
       showSuccess();
       return;
