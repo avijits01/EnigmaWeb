@@ -24,100 +24,171 @@
     <div class="SubmissionLoader">
         <div class="loader">
             <div class="success">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
-                    
-                    <style type="text/css">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                    style="enable-background:new 0 0 100 100;" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
 
-                        .circle{fill:none;stroke:#178839;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-                        .circle-dash{fill:none;stroke:#178839;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-                        .check{fill:none;stroke:#178839;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                        .check-dash{fill:none;stroke:#178839;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    <style type="text/css">
+                        .circle {
+                            fill: none;
+                            stroke: #178839;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-miterlimit: 10;
+                        }
+
+                        .circle-dash {
+                            fill: none;
+                            stroke: #178839;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-miterlimit: 10;
+                        }
+
+                        .check {
+                            fill: none;
+                            stroke: #178839;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+
+                        .check-dash {
+                            fill: none;
+                            stroke: #178839;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
 
                         .check {
                             stroke-dasharray: 60 100;
-                            animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
-                            -webkit-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
-                            -moz-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
-                            -o-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
+                            animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                            -webkit-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                            -moz-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                            -o-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
                             opacity: 0;
                         }
 
                         @-webkit-keyframes check {
-                            from {stroke-dashoffset: 60;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 60;
+                                opacity: 1;
+                            }
 
-                            to {stroke-dashoffset: 00;
-                            opacity: 1;}
+                            to {
+                                stroke-dashoffset: 00;
+                                opacity: 1;
+                            }
                         }
 
                         @-moz-keyframes check {
-                            from {stroke-dashoffset: 60;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 60;
+                                opacity: 1;
+                            }
 
-                            to {stroke-dashoffset: 00;
-                            opacity: 1;}
+                            to {
+                                stroke-dashoffset: 00;
+                                opacity: 1;
+                            }
                         }
 
                         @keyframes check {
-                            from {stroke-dashoffset: 60;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 60;
+                                opacity: 1;
+                            }
 
-                            to {stroke-dashoffset: 00;
-                            opacity: 1;}
+                            to {
+                                stroke-dashoffset: 00;
+                                opacity: 1;
+                            }
                         }
 
                         .check-dash {
                             stroke-dasharray: 10 100;
-                            animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
-                            -webkit-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
-                            -moz-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
-                            -o-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
+                            animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                            -webkit-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                            -moz-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                            -o-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
                         }
 
                         @-webkit-keyframes check-dash {
-                            from {stroke-dashoffset: 120;}
-                            to {stroke-dashoffset: 45;}
+                            from {
+                                stroke-dashoffset: 120;
+                            }
+
+                            to {
+                                stroke-dashoffset: 45;
+                            }
                         }
 
                         @-moz-keyframes check-dash {
-                            from {stroke-dashoffset: 120;}
-                            to {stroke-dashoffset: 45;}
+                            from {
+                                stroke-dashoffset: 120;
+                            }
+
+                            to {
+                                stroke-dashoffset: 45;
+                            }
                         }
 
                         @keyframes check-dash {
-                            from {stroke-dashoffset: 120;}
-                            to {stroke-dashoffset: 45;}
+                            from {
+                                stroke-dashoffset: 120;
+                            }
+
+                            to {
+                                stroke-dashoffset: 45;
+                            }
                         }
 
                         .circle {
                             stroke-dasharray: 300 300;
-                            animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
-                            -webkit-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
-                            -moz-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
-                            -o-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
+                            animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                            -webkit-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                            -moz-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                            -o-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
                             opacity: 0;
                         }
 
                         @-webkit-keyframes circle {
-                            from {stroke-dashoffset:300;
-                            opacity: 1;}
-                            to {stroke-dashoffset:0;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 300;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 0;
+                                opacity: 1;
+                            }
                         }
 
                         @-moz-keyframes circle {
-                            from {stroke-dashoffset:300;
-                            opacity: 1;}
-                            to {stroke-dashoffset:0;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 300;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 0;
+                                opacity: 1;
+                            }
                         }
 
                         @keyframes circle {
-                            from {stroke-dashoffset:300;
-                            opacity: 1;}
-                            to {stroke-dashoffset:0;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 300;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 0;
+                                opacity: 1;
+                            }
                         }
 
                         .circle-dash {
@@ -130,39 +201,54 @@
                         }
 
                         @-webkit-keyframes circledash {
-                            from {stroke-dashoffset:320;
-                            opacity: 1;}
-                            to {stroke-dashoffset: 20;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 320;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 20;
+                                opacity: 1;
+                            }
                         }
 
                         @-moz-keyframes circledash {
-                            from {stroke-dashoffset:320;
-                            opacity: 1;}
-                            to {stroke-dashoffset: 20;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 320;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 20;
+                                opacity: 1;
+                            }
                         }
 
                         @keyframes circledash {
-                            from {stroke-dashoffset:320;
-                            opacity: 1;}
-                            to {stroke-dashoffset: 20;
-                            opacity: 1;}
+                            from {
+                                stroke-dashoffset: 320;
+                                opacity: 1;
+                            }
+
+                            to {
+                                stroke-dashoffset: 20;
+                                opacity: 1;
+                            }
                         }
-
-
                     </style>
-                <g>
-                    <circle class="circle" cx="50" cy="49.9999657" r="47.5"/>
-                    <circle class="circle-dash" cx="50" cy="49.9999657" r="47.5"/>
-                    <polyline class="check" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	"/>
-                    <polyline class="check-dash" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	"/>
-                </g>
+                    <g>
+                        <circle class="circle" cx="50" cy="49.9999657" r="47.5" />
+                        <circle class="circle-dash" cx="50" cy="49.9999657" r="47.5" />
+                        <polyline class="check"
+                            points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	" />
+                        <polyline class="check-dash"
+                            points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	" />
+                    </g>
                 </svg>
             </div>
             <div class="error">
                 <svg class="cross__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="cross__circle" cx="26" cy="26" r="25" fill="none"/>
+                    <circle class="cross__circle" cx="26" cy="26" r="25" fill="none" />
                     <path class="cross__path cross__path--right" fill="none" d="M16,16 l20,20" />
                     <path class="cross__path cross__path--right" fill="none" d="M16,36 l20,-20" />
                 </svg>
@@ -180,7 +266,8 @@
                 Form Submitting
             </div>
             <div class="status-text-sub">
-                    Try resubmitting the form and make sure: <br>• All required fields are filled<br>• Captcha is completed<br><br><br>Otherwise, contact the Enigma team.
+                Try resubmitting the form and make sure: <br>• All required fields are filled<br>• Captcha is
+                completed<br><br><br>Otherwise, contact the Enigma team.
             </div>
         </div>
     </div>
@@ -204,28 +291,6 @@
         <h1 class="text-center"><u>Registration Form</u></h1>
         <small class="text-center form-text text-muted"><span class="req-asterisk">*</span>required.</small>
         <div class="container">
-            <!--    MODAL   -->
-            <div class="modal fade" id="submissionModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title"><strong>Form Submitted.</strong></h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                        </div>
-                        <div class="modal-body">
-                            <p>Your form has been submitted. Feel free to navigate our website.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
             <!--   FORM   -->
             <form id="form" method="POST" autocomplete="off">
 

@@ -1,13 +1,20 @@
 $(document).ready(function() {
+  //HIDING HIDDEN FIELDS
   $("#emailAddress").hide();
   $("#phone").hide();
   $("#longAnswer").hide();
   $("#fullName").hide();
 
-  if (localStorage.getItem("submitted") == "TRUE") {
-    alert(
-      "You have already submitted the form. You cannot make any changes now"
-    );
+  //CHECKING LOCAL STORAGE FOR SUCCESSFUL FORM SUBMISSIONS
+  if (typeof Storage !== "undefined") {
+    if (localStorage.getItem("submitted") == "TRUE") {
+      alert(
+        "You have already submitted the form. You cannot make any changes now."
+      );
+      showLoader();
+      showSuccess();
+      return;
+    }
   }
 });
 
@@ -21,12 +28,14 @@ function onSubmit(e) {
 
   if (formSubmitted) return;
 
-  if (localStorage.getItem("submitted") == "TRUE") {
-    formSubmitted = true;
-    //FORM WAS SUCCESSFULLY SUBMITTED
-    $("#submissionModal").modal();
-    resetForm();
-    return;
+  if (typeof Storage !== "undefined") {
+    if (localStorage.getItem("submitted") == "TRUE") {
+      formSubmitted = true;
+      //FORM WAS SUCCESSFULLY SUBMITTED
+      showLoader();
+      showSuccess();
+      return;
+    }
   }
 
   if (
@@ -51,6 +60,8 @@ function onSubmit(e) {
 
   formSubmitted = true;
   console.log("SUBMITTING FORM.....");
+  showLoader();
+
   fetch("https://enigmadev.herokuapp.com/submit", {
     headers: {
       Accept: "application/json",
@@ -68,22 +79,24 @@ function onSubmit(e) {
 }
 
 function handleData(json) {
-  console.log("Reached warning function");
-
   var warning = json["error"];
   if (warning == "Form Submitted") {
     formSubmitted = true;
     document.getElementById("error").style.color = "lightgreen";
-    $("#submissionModal").modal();
+    showSuccess();
     resetForm();
-
     if (typeof Storage !== "undefined") {
       // Code for localStorage/sessionStorage.
       localStorage.setItem("submitted", "TRUE");
     }
   } else {
     formSubmitted = false;
+    showError();
   }
+
+  setTimeout(() => {
+    hideLoader();
+  }, 5000);
 
   document.getElementById("error").innerHTML = warning;
 }

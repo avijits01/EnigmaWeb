@@ -1,39 +1,34 @@
 function showLoader() {
-    $(".SubmissionLoader").show();
+  $(".SubmissionLoader").show();
 
-    $(".error").hide();
-    $(".status-text-sub").hide();
-    $(".success").hide();
+  $(".error").hide();
+  $(".status-text-sub").hide();
+  $(".success").hide();
 
-    $(".loader-container").show();
-    $(".status-text").text("Form Submitting");
+  $(".loader-container").show();
+  $(".status-text").text("Form Submitting");
 }
 
 function showSuccess() {
-    $(".loader-container").hide();
-    $(".error").hide();
-    $(".status-text-sub").hide();
+  $(".loader-container").hide();
+  $(".error").hide();
+  $(".status-text-sub").hide();
 
-    $(".success").show();
-    $(".status-text").text("Form Submitted!");
+  $(".success").show();
+  $(".status-text").text("Form Submitted!");
 }
 
 function showError() {
-    $(".loader-container").hide();
-    $(".success").hide();
+  $(".loader-container").hide();
+  $(".success").hide();
 
-    $(".error").show();
-    $(".status-text-sub").show();
-    $(".status-text").text("Opps! Something Went Wrong.");
+  $(".error").show();
+  $(".status-text-sub").show();
+  $(".status-text").text("Opps! Something Went Wrong.");
 }
 
 function hideLoader() {
-    $(".SubmissionLoader").hide();
+  $(".SubmissionLoader").hide();
 }
 
-$(document).ready(function() {
-    // showLoader();
-    // showSuccess();
-    // showError();
-    // hideLoader();
-});
+
