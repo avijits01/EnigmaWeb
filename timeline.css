@@ -14,14 +14,7 @@ body {
 }
 
 .timeline-body {
-	/* background: #112c30;
-	background-image: radial-gradient(
-		circle at top,
-		rgba(81, 48, 87, 0.5),
-		rgba(54, 81, 139, 0.5)
-	);
-	background-color: #1a1a1a;
-	background-repeat: no-repeat; */
+	background: #112c30;
 
 	margin: 0px;
 	padding: 0px;
