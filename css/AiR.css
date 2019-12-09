@@ -3,6 +3,8 @@
 :root {
 	--headerOpacity: 1;
 	--headerScale: 1;
+	/* 700 * 560 */
+	--main-header-padding: 1;
 }
 
 .video-header {
@@ -169,7 +171,7 @@ main {
 	background-color: #1a1a1a;
 	background-repeat: no-repeat;
 	position: relative;
-	padding: 1rem;
+	padding-top: 2rem;
 	height: auto;
 	margin-top: 100vh;
 
@@ -225,4 +227,19 @@ main p {
 	100% {
 		background-position: 1000px;
 	}
+}
+
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+
+iframe {
+	position: relative;
+	top: 0px;
+	left: -10px;
+	width: 100vw;
+	border: none;
+	outline: none;
+	height: 500px;
+	margin: none;
 }

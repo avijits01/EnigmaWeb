@@ -2,9 +2,31 @@
 
 html,
 body {
+  height:100vh;
   background: #121212;
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
+
+main,header,body,section,.container{
+  border: 1px solid red;
+}
+
+@media only screen and (min-width:992px){
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 
 a{
   text-decoration: none;
@@ -34,8 +56,16 @@ a:hover{
   text-transform: uppercase;
 }
 
+
 h1 {
   font-weight: 700;
+}
+
+
+@media only screen and (min-width: 1199px){
+  h1{
+    font-size: 3.4rem;
+  }
 }
 
 .subtext {
