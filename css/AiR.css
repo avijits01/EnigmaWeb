@@ -3,8 +3,6 @@
 :root {
 	--headerOpacity: 1;
 	--headerScale: 1;
-	/* 700 * 560 */
-	--main-header-padding: 1;
 }
 
 .video-header {
