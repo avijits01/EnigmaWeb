@@ -32,6 +32,18 @@
 	transform: scale(var(--headerScale));
 }
 
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+
+html,
+body {
+	height: 100vh;
+	overflow-x: hidden;
+	color: whitesmoke;
+	font: "Roboto";
+}
+
 .grad {
 	background-color: #1a1a1a;
 }
@@ -49,18 +61,6 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-}
-
-/* =============================================================== */
-/* =============================================================== */
-/* =============================================================== */
-
-html,
-body {
-	height: 100vh;
-	overflow-x: hidden;
-	color: whitesmoke;
-	font: "Roboto";
 }
 
 .club-sub {
@@ -161,13 +161,15 @@ canvas {
 /* =============================================================== */
 /* =============================================================== */
 main {
-	background-image: radial-gradient(
+	/* background-image: radial-gradient(
 		circle at top,
 		rgba(81, 48, 87, 0.5),
 		rgba(54, 81, 139, 0.5)
 	);
 	background-color: #1a1a1a;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
+	background: #242424;
+	border-top: 2px solid #39acbd;
 	position: relative;
 	padding-top: 2rem;
 	height: auto;
@@ -189,11 +191,84 @@ main p {
 	max-width: 900px;
 	margin: 5em auto;
 }
+
 /* =============================================================== */
 /* =============================================================== */
 /* =============================================================== */
 
-.shine {
+iframe {
+	position: relative;
+	top: 0px;
+	left: -10px;
+	width: 100vw;
+	border: none;
+	border-top: 2px solid #39acbd;
+	outline: none;
+	height: 85vh;
+	margin: none;
+}
+
+.iframe-title {
+	display: block;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 1.9vw;
+
+	letter-spacing: 5px;
+	line-height: 1.2;
+	text-align: center;
+
+	margin-top: 3em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: white;
+	text-transform: uppercase;
+}
+
+.iframe-subtitle {
+	display: block;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.8em;
+
+	letter-spacing: 2px;
+	line-height: 1.2;
+	text-align: center;
+
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: rgb(185, 185, 185);
+	text-transform: none;
+}
+
+@media only screen and (max-width: 992px) {
+	.iframe-title {
+		font-size: 1.8vw;
+		letter-spacing: 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.iframe-title {
+		font-size: 2.5vw;
+		letter-spacing: 10px;
+		margin-top: 6em;
+	}
+}
+
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+
+.shine,
+.shine-slow {
 	background: #816406 -webkit-gradient(
 			linear,
 			left top,
@@ -211,6 +286,10 @@ main p {
 	text-shadow: 0 0px 0px rgba(240, 192, 37, 0.5);
 }
 
+.shine-slow {
+	-webkit-animation-duration: 3s;
+}
+
 @-webkit-keyframes shine {
 	0%,
 	10% {
@@ -225,19 +304,4 @@ main p {
 	100% {
 		background-position: 1000px;
 	}
-}
-
-/* =============================================================== */
-/* =============================================================== */
-/* =============================================================== */
-
-iframe {
-	position: relative;
-	top: 0px;
-	left: -10px;
-	width: 100vw;
-	border: none;
-	outline: none;
-	height: 500px;
-	margin: none;
 }
