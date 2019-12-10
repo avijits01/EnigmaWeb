@@ -206,6 +206,9 @@ iframe {
 	outline: none;
 	height: 85vh;
 	margin: none;
+
+	overflow: scroll !important;
+	-webkit-overflow-scrolling: touch !important;
 }
 
 .iframe-title {
