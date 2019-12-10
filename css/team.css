@@ -4,6 +4,16 @@
     border: transparent;
 }
 
+p,h1{
+    width: 380px;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    color: whitesmoke;
+    background: #121212;
+}
 img {
     max-width: 100%;
 }
@@ -16,6 +26,8 @@ img {
 }
 
 .team-card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background: #1f1f1f;
     width: 400px;
@@ -23,11 +35,10 @@ img {
     border-radius: 6px;
     padding: 2rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2) 0 0 1rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
 }
 
 .team-card-image-container {
-    margin: -2rem -2rem 1rem -2rem;
+    margin: -2rem -2rem 0rem -2rem;
 }
 
 .card-line {
@@ -40,17 +51,15 @@ img {
     animation: LineFadeIn .8s 1.4s forwards ease-in;
 }
 
-.card-title {
-    margin-top: 0px;
-}
 
 .card-content p {
     letter-spacing: 0.2px;
 }
 
 .card-content {
+    margin-top: -2rem;
+    margin-left: -1rem;
     opacity: 0;
-    margin: -1rem;
     animation: ContentFadeIn .8s 1.6s forwards;
 }
 
