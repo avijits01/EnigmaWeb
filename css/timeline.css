@@ -14,7 +14,8 @@ body {
 }
 
 .timeline-body {
-	background: #112c30;
+	background: #242424;
+
 	margin: 0px;
 	padding: 0px;
 	font-family: sans-serif;
@@ -25,6 +26,7 @@ body {
 	overflow-x: none;
 	overflow-y: scroll;
 }
+
 a {
 	color: #b9cfd0;
 	text-decoration: none;
@@ -44,42 +46,6 @@ h6 {
 	position: relative;
 	z-index: 1;
 	background-image: linear-gradient(to bottom, #6fc7d4 0%, #39acbd 100%);
-}
-.header .master-head {
-	padding: 7% 30px;
-}
-.header .page-title {
-	padding: 0 30px 0 30px;
-	font-size: 60px;
-	line-height: 1em;
-	letter-spacing: 10px;
-	color: #fff;
-}
-.header .page-description {
-	margin: 30px auto;
-	max-width: 600px;
-	font-size: 18px;
-	line-height: 2em;
-	color: #fff;
-}
-.header .scroll-button {
-	color: #fff;
-	font-size: 20px;
-	padding: 15px 20px 15px 20px;
-	display: inline-block;
-	background: #3093a2;
-	cursor: pointer;
-	transition-duration: 0.4s;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.header .scroll-button:hover {
-	background: #246f7b;
-}
-.header .scroll-button:active {
-	background: #194c53;
 }
 .main-content {
 	margin: 0px auto;
@@ -101,22 +67,18 @@ h6 {
 	clear: both;
 }
 .footer {
-	background: #112c30;
-	padding: 150px 0px 300px 0px;
+	background: #242424;
+	padding: 150px 0px 180px 0px;
 	position: relative;
 	z-index: 1;
 }
-.footer .good-bye {
-	text-align: center;
-	font-size: 18px;
-	line-height: 36px;
+
+@media only screen and (max-width: 780px) {
+	.footer {
+		padding: 150px 0px 200px 0px;
+	}
 }
-.footer .good-bye p {
-	display: block;
-	margin: 0px auto 30px auto;
-	max-width: 300px;
-	clear: both;
-}
+
 .section .section-inner {
 	margin: 0px auto;
 	width: 1024px;
@@ -155,20 +117,29 @@ h6 {
 	left: -30px;
 	width: 60px;
 }
+
+/* To edit the color scheme of the Stem... and stuff */
+/* Note that the Stem foreground is a mask.png basically */
+/* And all this stuff is only for the background stuff */
 .stem-wrapper .stem {
 	background: #1e4f56;
+	/* background: #fff; */
 	height: 100%;
 }
 .stem-wrapper .stem-background {
 	background: #39acbd;
+	/* background: #fff; */
 	height: 50%;
 	transition-duration: 0.5s;
 }
+
+/* Edit Point for the Foreground of the the Stem Top Padding */
 .stem-padding,
 .single-stem-icon {
 	width: 60px;
 	height: 60px;
 	margin: 0px auto;
+	/* background: #242424; */
 	background: transparent
 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png)
 		repeat-y top center;
@@ -249,12 +220,14 @@ h6 {
 	width: 60px;
 	cursor: pointer;
 }
+/* Edit Point for the Foreground of the the Stem */
 .post-wrapper .post .stem-overlay .stem-mask {
 	position: absolute;
 	top: 60px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+	/* background: #242424; */
 	background: transparent
 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png)
 		repeat-y top center;

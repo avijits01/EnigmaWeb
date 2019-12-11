@@ -29,13 +29,8 @@ body {
 
 
 
-* {
-  border: 1px solid red;
-}
 
-section{
-  border:5px solid yellowgreen;
-}
+
 
 a {
   text-decoration: none;
