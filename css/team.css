@@ -1,144 +1,153 @@
-    * {
-        line-height: 1.5;
-        border: transparent;
-    }
-    
-    img {
-        max-width: 100%;
-    }
-    
-    .team-container {
-        height: 100vh;
-        width: 100%;
-    }
-    
-    .team-card {
-        position: relative;
-        background: #1f1f1f;
-        width: 400px;
-        height: 75vh;
-        border-radius: 6px;
-        padding: 2rem;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2) 0 0 1rem rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-    }
-    
-    .team-card-image-container {
-        margin: -2rem -2rem 1rem -2rem;
-    }
-    
-    .card-line {
-        opacity: 0;
-        animation: LineFadeIn .8s .8s forwards ease-in;
-    }
-    
-    .team-card-image {
-        opacity: 0;
-        animation: LineFadeIn .8s 1.4s forwards ease-in;
-    }
-    
-    .card-title {
-        margin-top: 0px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-    
-    .card-content p {
-        letter-spacing: .2px;
-    }
-    
-    .card-content {
-        opacity: 0;
-        margin: -1rem;
-        animation: ContentFadeIn .8s 1.6s forwards;
-    }
-    
-    .card_svg {
-        position: absolute;
-        left: 0;
-        top: 205px;
-    }
-    
-    @keyframes LineFadeIn {
-        0% {
-            opacity: 0;
-            d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300");
-            stroke: #fff;
-        }
-        50% {
-            opacity: 1;
-            d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300 ");
-            stroke: #888BFF;
-        }
-        100% {
-            opacity: 1;
-            d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
-            stroke: #545581;
-        }
-    }
-    
-    @keyframes ContentFadeIn {
-        0% {
-            transform: translate(-0.5rem, -0.5rem);
-            opacity: 0;
-            filter: blur(2px);
-        }
-        50% {
-            opacity: 1;
-            filter: blur(2px);
-        }
-        100% {
-            transform: translateY(0) scale(1);
-            opacity: 1;
-            filter: blur(0);
-        }
-    }
-    
-    .team-card-2 {
-        overflow: hidden;
-        width: 400px;
-        position: relative;
-        height: 45vh;
-        background-image: linear-gradient(to right, #7b7b7b, #EC4EB7, #EE23AA, #7b7b7b);
-        background-size: 300% 100%;
-        border-radius: 5px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .team-card-2:hover {
-        background-position: 100% 0;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .team-card-2:hover .team-card-2-image-container img {
-        filter: grayscale(0%);
-    }
-    
-    .team-card-2-image-container img {
-        width: 100%;
-        height: 30vh;
-        transition: all 0.5s ease-in-out;
-        object-fit: cover;
-        filter: grayscale(100%);
-    }
-    
-    .card-content-2 {
-        padding: 10px 10px;
-        background: #343232;
-        font-family: 'Titillium Web';
-    }
-    
-    .card-name {
-        font-size: 15px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-weight: 200;
-    }
-    
-    @media only screen and (max-width: 900px) {
-        .team-card-2 {
-            width: 100px;
-        }
-    }
+* {
+  line-height: 1.5;
+  border:none;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom:2.5em;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.team-card {
+  background: #1f1f1f;
+  width: 400px;
+  height: 75vh;
+  border-radius: 6px;
+  padding: 2rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2) 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+
+.card-line {
+  opacity: 0;
+  animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+}
+
+.team-card-image {
+  opacity: 0;
+  animation: LineFadeIn 0.8s 1.4s forwards ease-in;
+}
+
+.card-title {
+  margin-top: 0px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.card-content p {
+  letter-spacing: 0.2px;
+}
+
+.card-content {
+  opacity: 0;
+  margin: -1rem;
+  animation: ContentFadeIn 0.8s 1.6s forwards;
+}
+
+.card_svg {
+  position: absolute;
+  left: 0;
+  top: 205px;
+}
+
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path(
+      "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300"
+    );
+    stroke: #fff;
+  }
+  50% {
+    opacity: 1;
+    d: path(
+      "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300 "
+    );
+    stroke: #888bff;
+  }
+  100% {
+    opacity: 1;
+    d: path(
+      "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
+    );
+    stroke: #545581;
+  }
+}
+
+@keyframes ContentFadeIn {
+  0% {
+    transform: translate(-0.5rem, -0.5rem);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.team-card-2 {
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+  height: 45vh;
+  background-image: linear-gradient(
+    to right,
+    #7b7b7b,
+    #ec4eb7,
+    #ee23aa,
+    #7b7b7b
+  );
+  background-size: 300% 100%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.team-card-2:hover {
+  background-position: 100% 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.team-card-2:hover .team-card-2-image-container img {
+  filter: grayscale(0%);
+}
+
+.team-card-2-image-container img {
+  width: 100%;
+  height: 30vh;
+  transition: all 0.5s ease-in-out;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.card-content-2 {
+  padding: 10px 10px;
+  background: #343232;
+  font-family: "Titillium Web";
+}
+
+.card-name {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
