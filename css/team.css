@@ -16,6 +16,7 @@ img {
   max-width: 100%;
 }
 
+/*The whole card*/
 .card {
   border: none;
   background: #343232;
@@ -25,17 +26,20 @@ img {
   font-family: "Titillium Web";
 }
 
+/*The card image*/
 .card img {
   height: 300px;
   filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
 }
 
+/*Image on hover*/
 .card:hover img {
   filter: grayscale(0%);
   transition: all 0.5s ease-in-out;
 }
 
+/*THE GRADIENT*/
 li {
   background-image: linear-gradient(
     to right,
@@ -48,12 +52,14 @@ li {
   transition: all 0.5s ease-in-out;
 }
 
+/*GRADIENT ON CARD HOVER*/
 .card:hover li {
   background-position: 100% 0;
   transition: all 0.5s ease-in-out;
 }
 
-.card:hover {
+/*IMAGE AND GRADIENT ON CARD OVER*/
+.card:hover{
   filter: grayscale(0%);
   transition: all 0.5s ease-in-out;
 }
