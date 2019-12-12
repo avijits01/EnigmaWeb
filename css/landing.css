@@ -51,6 +51,12 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.face.face-1 .content img {
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+	filter: grayscale(1);
+}
+
 .max-height {
 	height: 100vh;
 	margin: 0;
