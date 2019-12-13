@@ -68,14 +68,14 @@ h6 {
 }
 .footer {
 	background: #242424;
-	padding: 150px 0px 180px 0px;
+	padding: 150px 0px 250px 0px;
 	position: relative;
 	z-index: 1;
 }
 
 @media only screen and (max-width: 780px) {
 	.footer {
-		padding: 150px 0px 200px 0px;
+		padding: 150px 0px 300px 0px;
 	}
 }
 
@@ -139,14 +139,13 @@ h6 {
 	width: 60px;
 	height: 60px;
 	margin: 0px auto;
-	/* background: #242424; */
 	background: transparent
 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png)
 		repeat-y top center;
 }
 .single-stem-icon.scroll-to-top {
 	cursor: pointer;
-	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/scroll-to-top-icon.png);
+	background-image: url(/images/scroll-to-top-icon.png);
 }
 /*==========  Post wrapper ==========*/
 .post-wrapper {
@@ -196,6 +195,29 @@ h6 {
 .post-wrapper .post:nth-child(odd) .stem-overlay {
 	right: -110px;
 }
+
+.post-wrapper .post.i1-icon .stem-overlay .icon {
+	background-image: url(/images/i1-icon.png);
+}
+.post-wrapper .post.i2-icon .stem-overlay .icon {
+	background-image: url(/images/i2-icon.png);
+}
+.post-wrapper .post.i3-icon .stem-overlay .icon {
+	background-image: url(/images/i3-icon.png);
+}
+.post-wrapper .post.i4-icon .stem-overlay .icon {
+	background-image: url(/images/i4-icon.png);
+}
+.post-wrapper .post.i5-icon .stem-overlay .icon {
+	background-image: url(/images/i5-icon.png);
+}
+.post-wrapper .post.i6-icon .stem-overlay .icon {
+	background-image: url(/images/i6-icon.png);
+}
+.post-wrapper .post.i7-icon .stem-overlay .icon {
+	background-image: url(/images/i7-icon.png);
+}
+
 .post-wrapper .post.music-icon .stem-overlay .icon {
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/music-icon.png);
 }

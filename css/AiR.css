@@ -48,7 +48,7 @@ body {
 	background-color: #1a1a1a;
 }
 
-.grad::after {
+.grad::before {
 	background: radial-gradient(
 		circle at top,
 		rgba(81, 48, 87, 0.5),
