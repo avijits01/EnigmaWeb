@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   body{
       text-align: center !important;
   }
@@ -10,9 +10,7 @@
     font-size: 0.8rem;
   }
 
-  .intro h1 {
-    font-size: 18vw;
-  }
+
 
   .intro-content {
     display: flex;
@@ -36,7 +34,7 @@
     margin: 0;
     margin-top: 2em;
     margin-bottom: 5em;
-    padding-right: 8em;
+    padding-right: 10em;
   }
 
   .row {
