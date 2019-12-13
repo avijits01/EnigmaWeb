@@ -1,0 +1,105 @@
+
+section {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.max-height{
+    height: max-content;
+    min-height: 100vh;
+}
+
+/*LANDING SECTION*/
+.landing-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link:first-child {
+  margin-right: auto;
+}
+
+.title-header {
+  text-align: center;
+}
+
+.title-header h6 {
+  margin-bottom: 3em;
+}
+
+.button-ghost-white{
+    margin-bottom: 3em;
+}
+
+/*INTRO-SECTION*/
+.content-section{
+    display:flex;
+    flex-direction: column;
+}
+.intro{
+    text-align: center;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    border:1px solid red;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.goal-section{
+    width:50%;
+    padding-left: 3em;
+    margin-right: auto;
+}
+
+.step-section{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: auto;
+
+}
+
+/*END OF STEP SECTION*/
+.department-section{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: block;
+    margin: auto;
+}
+
+.department-section{
+    text-align: center;
+}
+
+.project-section{
+    text-align: center;
+}
+
+section:last-child{
+    margin-bottom:0;
+    padding-bottom:0;
+}
