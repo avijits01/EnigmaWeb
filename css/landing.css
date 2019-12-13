@@ -139,12 +139,12 @@
     
     .title-header:hover h1::before {
         color: rgba(255, 0, 188, .8);
-        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+        animation: glitch .5s cubic-bezier(.25, .46, .45, .94) both infinite;
     }
     
     .title-header:hover h1::after {
         color: rgba(0, 255, 255, .8);
-        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+        animation: glitch .5s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
     }
     
     .title-header h6 {
