@@ -96,6 +96,7 @@ body {
   font-size: 6.25rem;
   z-index: 2;
   letter-spacing: 0.6rem;
+  width:99%;
 }
 
 .title-header h1::before,
