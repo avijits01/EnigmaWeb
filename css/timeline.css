@@ -139,9 +139,7 @@ h6 {
 	width: 60px;
 	height: 60px;
 	margin: 0px auto;
-	background: transparent
-		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png)
-		repeat-y top center;
+	background: transparent url(/images/stem-mask.png) repeat-y top center;
 }
 .single-stem-icon.scroll-to-top {
 	cursor: pointer;
@@ -250,9 +248,7 @@ h6 {
 	left: 0px;
 	right: 0px;
 	/* background: #242424; */
-	background: transparent
-		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/stem-mask.png)
-		repeat-y top center;
+	background: transparent url(/images/stem-mask.png) repeat-y top center;
 }
 .post-wrapper .post .post-content {
 	opacity: 0.3;
