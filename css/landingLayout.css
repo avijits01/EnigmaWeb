@@ -4,6 +4,10 @@ section {
   padding: 0;
 }
 
+*{
+    border : 1px dashed red;
+}
+
 .max-height{
     height: max-content;
     min-height: 100vh;
