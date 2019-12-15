@@ -9,56 +9,6 @@ body {
 	font-family: "Roboto", "Lato", sans-serif;
 }
 
-.nav-bar a {
-	text-decoration: none;
-	color: whitesmoke;
-	transition: all 0.2s;
-	position: relative;
-	transition: all 0.3s;
-}
-
-.nav-bar a::after {
-	position: absolute;
-	width: 0%;
-	height: 2px;
-	content: "";
-	bottom: 0;
-	left: 50%;
-	background: #fff;
-	border-radius: 10px;
-	transition: all 0.3s ease;
-}
-
-.nav-link {
-	color: #7c7c7c;
-	font-size: 12px;
-	letter-spacing: 2px;
-	font-family: "Poppins";
-	line-height: 80px;
-	text-transform: uppercase;
-}
-
-/* Adding the Underline Effect to the Container of the Nav-Text */
-.nav-link:hover a::after {
-	width: 100%;
-	left: 0%;
-}
-/* Removing the Underline Effect for the Branding Text */
-.nav-link:first-child:hover a::after {
-	width: 0%;
-	left: 50%;
-}
-
-.nav-link:first-child {
-	font-family: "Poppins";
-	line-height: 80px;
-	color: #fff;
-	font-size: 15px;
-	letter-spacing: 3px;
-	font-weight: 900;
-	text-transform: uppercase;
-}
-
 .face.face-1 .content img {
 	filter: gray;
 	/* IE6-9 */

@@ -11,14 +11,6 @@
 		font-size: 0.8rem;
 	}
 
-	.nav-link {
-		margin-right: 0.5em;
-		padding: 0;
-	}
-	.nav-link:first-child {
-		margin-right: 0;
-	}
-
 	.intro-content {
 		display: flex;
 		flex-direction: column;
