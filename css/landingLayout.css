@@ -1,116 +1,121 @@
 section {
-  margin: 0;
-  margin-bottom: 3rem;
-  padding: 0;
+	margin: 0;
+	margin-bottom: 3rem;
+	padding: 0;
 }
 
-*{
-    border : 1px dashed red;
+* {
+	border: 1px dashed red;
 }
 
-.max-height{
-    height: max-content;
-    min-height: 100vh;
+.max-height {
+	height: max-content;
+	min-height: 100vh;
 }
 
-.nav-link:first-child{
-    margin-left: 2.5em;
-    margin-right: auto;
+.nav-link:first-child {
+	margin-left: 2.5em;
+	margin-right: auto;
 }
 
-.nav-link{
-    margin-right: 2em;
+.nav-link {
+	margin-right: 2em;
 }
 
 /*LANDING SECTION*/
 .landing-section {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .nav-bar {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .nav-link:first-child {
-  margin-right: auto;
+	margin-right: auto;
+}
+
+.text-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
 }
 
 .title-header {
-  text-align: center;
+	text-align: center;
 }
 
 .title-header h6 {
-  margin-bottom: 3em;
+	margin-bottom: 3em;
 }
 
-.button-ghost-white{
-    margin-bottom: 3em;
+.button-ghost-white {
+	margin-bottom: 3em;
 }
 
 /*INTRO-SECTION*/
-.content-section{
-    display:flex;
-    flex-direction: column;
+.content-section {
+	display: flex;
+	flex-direction: column;
 }
-.intro{
-    text-align: center;
-}
-
-.intro-content{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+.intro {
+	text-align: center;
 }
 
-.row{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
+.intro-content {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
 }
 
-.goal-section{
-    width:50%;
-    padding-left: 3em;
-    margin-right: auto;
+.row {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
 }
 
-.step-section{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-right: auto;
+.goal-section {
+	width: 50%;
+	padding-left: 3em;
+	margin-right: auto;
+}
 
+.step-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
 }
 
 /*END OF STEP SECTION*/
-.department-section{
-    text-align: center;
+.department-section {
+	text-align: center;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
-.card{
-    display: block;
-    margin: auto;
+.card {
+	display: block;
+	margin: auto;
 }
 
-.department-section{
-    text-align: center;
+.department-section {
+	text-align: center;
 }
 
-.project-section{
-    text-align: center;
+.project-section {
+	text-align: center;
 }
 
-section:last-child{
-    margin-bottom:0;
-    padding-bottom:0;
+section:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
