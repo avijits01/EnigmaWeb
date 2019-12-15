@@ -29,11 +29,6 @@ body {
 	transition: all 0.3s ease;
 }
 
-.nav-bar a:hover::after {
-	width: 100%;
-	left: 0%;
-}
-
 .nav-link {
 	color: #7c7c7c;
 	font-size: 12px;
@@ -41,6 +36,17 @@ body {
 	font-family: "Poppins";
 	line-height: 80px;
 	text-transform: uppercase;
+}
+
+/* Adding the Underline Effect to the Container of the Nav-Text */
+.nav-link:hover a::after {
+	width: 100%;
+	left: 0%;
+}
+/* Removing the Underline Effect for the Branding Text */
+.nav-link:first-child:hover a::after {
+	width: 0%;
+	left: 50%;
 }
 
 .nav-link:first-child {
