@@ -13,13 +13,17 @@ section {
 	min-height: 100vh;
 }
 
+.nav-link {
+	/* margin-right: 2em; */
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
 .nav-link:first-child {
 	margin-left: 2.5em;
 	margin-right: auto;
-}
-
-.nav-link {
-	margin-right: 2em;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*LANDING SECTION*/
