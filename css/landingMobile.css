@@ -4,6 +4,7 @@
 		min-height: 100vh;
 	}
 
+
 	.landing-section{
 		display: flex;
 		flex-direction: column;
@@ -118,7 +119,4 @@
 		text-align: center;
 	}
 
-	*{
-		border: 1px solid red;
-	}
 }
