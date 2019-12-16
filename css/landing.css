@@ -22,6 +22,10 @@ h1 {
   filter: grayscale(1);
 }
 
+.terminal {
+    margin-top: 3rem;
+}
+
 .max-height {
   height: 100vh;
   margin: 0;
