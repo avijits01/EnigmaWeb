@@ -5,31 +5,70 @@ const router = express.Router();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const request = require("request");
+const helmet = require("helmet");
 require("dotenv").config();
+app.use(express.static(__dirname + "/"));
+app.use(helmet());
 
-router.get("/", function(req, res) {
+app.listen(process.env.PORT || 5000);
+
+app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
   //__dirname : It will resolve to the project folder.
 });
 
-router.get("/about", function(req, res) {
-  res.sendFile(path.join(__dirname + "/landing.html"));
+app.get("/index", function(req, res) {
+  res.sendFile(path.join(__dirname + "/index.html"));
+  //__dirname : It will resolve to the project folder.
 });
 
-router.get("/AiR", function(req,res){
-  res.sendFile(path.join(__dirname + "AiR.html"));
+app.get("/about", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
 
-router.get("/landing", function(req, res) {
-  res.sendFile(path.join(__dirname + "/landing.html"));
+app.get("/landing", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
 
-router.get("/registrations", function(req, res) {
-  res.sendFile(path.join(__dirname + "/registrations.html"));
+app.get("/enigma", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
 
-router.get("/register", function(req, res) {
-  res.sendFile(path.join(__dirname + "/registrations.html"));
+app.get("/homepage", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/landing.html"));
+});
+
+app.get("/register", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+});
+
+app.get("/apply", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+});
+
+app.get("/join", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+});
+
+app.get("/registeration", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+});
+
+app.get("/air", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+});
+app.get("/AiR", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+});
+app.get("/airesearch", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+});
+app.get("/team", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/team.html"));
+});
+
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/404.html"));
 });
 
 app.use(bodyParser.json()); // for parsing application/json
@@ -40,28 +79,27 @@ app.use(cors());
 app.post("/submit", function(req, res) {
   console.log(req.body);
 
-  if(
-    !req.body.name ||
-    !req.body.email || 
-    !req.body.situation || 
-    !req.body.regNo || 
-    !req.body.phoneNumber 
-  )
-
-  // g-recaptcha-response is the key that browser will generate upon form submit.
-  // if its blank or null means user has not selected the captcha, so return the error.
   if (
-    req.body["g-recaptcha-response"] === undefined ||
-    req.body["g-recaptcha-response"] === "" ||
-    req.body["g-recaptcha-response"] === null
-  ) {
-    return res.json({
-      success: false,
-      captcha: false,
-      mail: false,
-      error: "Captcha was not filled."
-    });
-  }
+    !req.body.name ||
+    !req.body.email ||
+    !req.body.situation ||
+    !req.body.regNo ||
+    !req.body.phoneNumber
+  )
+    if (
+      req.body["g-recaptcha-response"] === undefined ||
+      req.body["g-recaptcha-response"] === "" ||
+      req.body["g-recaptcha-response"] === null
+    ) {
+      // g-recaptcha-response is the key that browser will generate upon form submit.
+      // if its blank or null means user has not selected the captcha, so return the error.
+      return res.json({
+        success: false,
+        captcha: false,
+        mail: false,
+        error: "Captcha was not filled."
+      });
+    }
   // Put your secret key here.
   var secretKey = process.env.RECAPTCHA;
   // req.connection.remoteAddress will provide IP address of connected user.
@@ -135,6 +173,3 @@ app.post("/submit", function(req, res) {
 });
 
 //add the routerlog
-app.use(express.static(__dirname + "/"));
-
-app.listen(process.env.PORT || 5000);
