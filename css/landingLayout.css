@@ -11,6 +11,7 @@
     height: max-content;
     min-height: 100vh;
   }
+
   /*LANDING SECTION*/
   .landing-section {
     display: -webkit-box;
@@ -18,8 +19,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .text-container {
@@ -32,16 +33,15 @@
     text-align: center;
   }
 
-  .title-header h1{
+  .title-header h1 {
     padding: 0;
     margin: 0;
   }
 
-  .title-header h2{
+  .title-header h2 {
     margin: 0;
     padding: 0;
   }
-
 
   .button-raise {
     margin-bottom: 5em;
@@ -56,8 +56,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .intro {
@@ -70,11 +70,11 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 
   .row {
@@ -85,29 +85,27 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .goal-section {
-    width: 50%;
-    padding-left: 3em;
-    margin-right: auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin-bottom: 5em;
   }
 
+  .goal-section {
+    padding-left: 3em;
+    flex:50%;
+  }
+
   .step-section {
+    flex: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: auto;
-    padding-right: 5em;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   /*END OF STEP SECTION*/
@@ -122,14 +120,14 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .card {
