@@ -1,14 +1,48 @@
 @media only screen and (max-width: 769px) {
+	.max-height{
+		height: min-content;
+		min-height: 100vh;
+	}
+
+	.landing-section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-header{
+		text-align: center;
+		height: min-content;
+		margin: 0;
+		padding: 0;
+	}
+	
 	.title-header h1 {
+		margin: 0;
+		padding: 0;
+		margin-top: 0.5em;
 		font-size: 20vw;
 	}
-
-	* {
-		border: 1px dashed red;
+	
+	h6 {
+		margin: 0;
+		padding: 0 1em 0em 1em;
+		margin-top: 0.5em;
+		margin-bottom:4em;
+		font-size: 0.8rem;
 	}
 
-	h6 {
-		font-size: 0.8rem;
+	section:first-child{
+		margin-bottom: 10em;
+	}
+
+	section{
+		margin-bottom:5em;
+	}
+
+	/*---------------------------------------*/
+
+	.department-section, .content-section{
+		text-align: center;
 	}
 
 	.intro-content {
@@ -16,10 +50,15 @@
 		flex-direction: column;
 	}
 
+	.intro{
+		margin-bottom:2.5em;
+	}
+
 	.goal-section {
 		margin: 0;
+		margin-top: 2.5em;
 		margin-bottom: 3em;
-		padding: 5em 0em 1.5em;
+		padding: 0;
 		width: 100%;
 		text-align: center;
 	}
@@ -28,12 +67,22 @@
 		font-size: 3rem;
 	}
 
+	.goal-section p{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 	.step-section {
 		padding: 0;
 		margin: 0;
-		margin-top: 2em;
+		margin-top: 1em;
 		margin-bottom: 5em;
-		padding-right: 10em;
+		text-align: left;
+		margin-right: 9em;
+	}
+
+	.perspective-text p{
+		font-size: inherit;
 	}
 
 	.row {
@@ -55,7 +104,21 @@
 		text-align: center;
 	}
 
+	.project-section p, .project-section h1, .project-section h2{
+		margin: 0;
+		padding: 0;
+	}
+
+	.title-project{
+		font-size: 2.5rem;
+	}
+
+
 	section:last-child {
 		text-align: center;
+	}
+
+	*{
+		border: 1px solid red;
 	}
 }

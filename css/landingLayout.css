@@ -1,110 +1,100 @@
-section {
+@media only screen and (min-width: 770px) {
+  section {
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding: 0;
-}
+  }
 
-* {
-    border: 1px dashed transparent;
-}
-
-.max-height {
+  .max-height {
     height: max-content;
     min-height: 100vh;
-}
-
-
-/*LANDING SECTION*/
-
-.landing-section {
+  }
+  /*LANDING SECTION*/
+  .landing-section {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.text-container {
+  .text-container {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-}
+  }
 
-.title-header {
+  .title-header {
     text-align: center;
-}
+  }
 
-.title-header h6 {
+
+  .button-ghost-white {
     margin-bottom: 3em;
-}
+  }
 
-.button-ghost-white {
-    margin-bottom: 3em;
-}
+  /*INTRO-SECTION*/
 
-
-/*INTRO-SECTION*/
-
-.content-section {
+  .content-section {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.intro {
+  .intro {
     text-align: center;
-}
+  }
 
-.intro-content {
+  .intro-content {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-}
+  }
 
-.row {
+  .row {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-}
+  }
 
-.goal-section {
+  .goal-section {
     width: 50%;
     padding-left: 3em;
     margin-right: auto;
-}
+  }
 
-.step-section {
+  .step-section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: auto;
-}
+  }
 
+  /*END OF STEP SECTION*/
 
-/*END OF STEP SECTION*/
-
-.department-section {
+  .department-section {
     text-align: center;
-}
+  }
 
-.row {
+  .row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.card {
+  .card {
     display: block;
     margin: auto;
-}
+  }
 
-.department-section {
+  .department-section {
     text-align: center;
-}
+  }
 
-.project-section {
+  .project-section {
     text-align: center;
-}
+  }
 
-section:last-child {
+  section:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
 }
