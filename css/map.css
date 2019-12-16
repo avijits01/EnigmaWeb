@@ -32,9 +32,9 @@ body *:after {
     min-height: 100%;
     /* background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%); */
     background: #121212;
-    background: -webkit-radial-gradient(center, #252525, #121212);
-    background: -moz-radial-gradient(center, #252525, #121212);
-    background: radial-gradient(ellipse at center, #252525, #121212);
+    /* background: -webkit-radial-gradient(center, #252525, #121212); */
+    /* background: -moz-radial-gradient(center, #252525, #121212); */
+    /* background: radial-gradient(ellipse at center, #252525, #121212); */
     /* padding: 0 15px; */
     position: relative;
 }
