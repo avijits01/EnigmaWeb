@@ -91,6 +91,7 @@
   }
 
   .goal-section {
+    padding: 0;
     padding-left: 3em;
     flex:50%;
   }

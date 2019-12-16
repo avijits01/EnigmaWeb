@@ -209,17 +209,28 @@ h1 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
+<<<<<<< HEAD
 .project-section h1 {
     margin-top: 1rem;
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 3.5rem;
+=======
+.project-section h1{
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-weight: 300;
 }
+
+.title-project{
+    font-size: 3rem;
+>>>>>>> 224017c199bb643613a83741abeacf692385748e
+}
+
 
 .project-section h2 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .contribute-section {

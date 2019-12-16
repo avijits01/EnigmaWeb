@@ -111,16 +111,15 @@
     .project-section {
         text-align: center;
     }
-    .project-section p,
-    .project-section h1,
-    .project-section h2 {
-        margin: 0;
-        padding: 0;
-    }
+ 
     .title-project {
         font-size: 2.5rem;
     }
     section:last-child {
         text-align: center;
+    }
+
+    .contribute-section h1{
+        font-size: 2.5rem;
     }
 }
