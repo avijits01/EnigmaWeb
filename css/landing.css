@@ -262,15 +262,16 @@ h1 {
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 white;
-  }
-  50% {
-    box-shadow: 15px 15px 10px white;
-  }
-  100% {
-    box-shadow: 0 0 0 white;
-  }
+
+    0% {
+        box-shadow: 0 0 0 white;
+    }
+    50% {
+        box-shadow: 0px 5px 10px white;
+    }
+    100% {
+        box-shadow: 0 0 0 white;
+    }
 }
 
 @-webkit-keyframes fade_move_down {
