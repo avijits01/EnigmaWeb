@@ -1,39 +1,105 @@
-@media only screen and (max-width: 769px) {
-    .title-header h1 {
-        font-size: 20vw;
+@media only screen and (max-width: 1199px) {
+    .max-height {
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        min-height: 100vh;
     }
     * {
-        border: 1px dashed red;
         font-family: 'Montserrat', 'Roboto', sans-serif;
     }
+    .landing-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .title-header {
+        text-align: center;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        margin: 0;
+        padding: 0;
+    }
+    .title-header h1 {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.5em;
+        font-size: 20vw;
+    }
     h6 {
+        margin: 0;
+        padding: 0 1em 0em 1em;
+        margin-top: 0.5em;
+        margin-bottom: 4em;
         font-size: 0.8rem;
     }
+    section:first-child {
+        margin-bottom: 10em;
+    }
+    section {
+        margin-bottom: 5em;
+    }
+    /*---------------------------------------*/
+    .department-section,
+    .content-section {
+        text-align: center;
+    }
     .intro-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+    }
+    .intro {
+        margin-bottom: 2.5em;
     }
     .goal-section {
         margin: 0;
+        margin-top: 2.5em;
         margin-bottom: 3em;
-        padding: 5em 0em 1.5em;
+        padding: 0;
         width: 100%;
         text-align: center;
     }
     .goal-section h1 {
         font-size: 3rem;
     }
+    .goal-section p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     .step-section {
         padding: 0;
         margin: 0;
-        margin-top: 2em;
+        margin-top: 1em;
         margin-bottom: 5em;
-        padding-right: 10em;
+        text-align: left;
+        margin-right: 9em;
+    }
+    .perspective-text p {
+        font-size: inherit;
     }
     .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .department-section h1 {
@@ -44,6 +110,15 @@
     }
     .project-section {
         text-align: center;
+    }
+    .project-section p,
+    .project-section h1,
+    .project-section h2 {
+        margin: 0;
+        padding: 0;
+    }
+    .title-project {
+        font-size: 2.5rem;
     }
     section:last-child {
         text-align: center;
