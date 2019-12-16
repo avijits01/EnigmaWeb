@@ -209,16 +209,20 @@ h1 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
-.project-section h1 {
+.project-section h1{
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+.title-project{
     font-size: 3rem;
 }
+
 
 .project-section h2 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .contribute-section {
