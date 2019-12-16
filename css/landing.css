@@ -129,6 +129,11 @@ h1 {
     transition: all 0.3s;
 }
 
+.content-section {
+    background: #c9c8c8;
+    color: #121212;
+}
+
 .intro-header {
     font-size: 4rem;
     font-style: bold;
@@ -140,6 +145,7 @@ h1 {
 .intro h2 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-size: 2rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -149,7 +155,8 @@ h1 {
 
 .intro-content {
     height: 100vh;
-    background: #0a0a0a;
+    color: #121212;
+    background: #c9c8c8;
 }
 
 .intro-content h1 {
@@ -165,10 +172,67 @@ h1 {
 
 .goal-section p {
     font-size: 1.2rem;
+    color: #121212;
 }
 
 .perspective-text p {
-    font-size: 4.3rem;
+    font-size: 4.1rem;
+    color: #121212;
+}
+
+.card {
+    opacity: 0.7;
+}
+
+.department-section h1 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 3.7rem;
+    font-weight: 100;
+}
+
+.department-section h2 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.project-section {
+    background: #c9c8c8;
+    color: #121212;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+.project-section h1 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.project-section h2 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.contribute-section {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contribute-section h1 {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.contribute-section a {
+    text-decoration: none;
+    color: antiquewhite;
+    border-bottom: solid 1px white;
+}
+
+.contribute-section h5 {
+    font-weight: 400;
 }
 
 @-webkit-keyframes fade_move_down {

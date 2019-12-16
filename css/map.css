@@ -24,29 +24,29 @@ body *:after {
 } */
 
 .Map-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	box-sizing: border-box;
-	min-height: 100%;
-	/* background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%); */
-	background: #252525;
-	background: -webkit-radial-gradient(center, #252525, #121212);
-	background: -moz-radial-gradient(center, #252525, #121212);
-	background: radial-gradient(ellipse at center, #252525, #121212);
-	/* padding: 0 15px; */
-	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100%;
+    /* background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%); */
+    background: #121212;
+    background: -webkit-radial-gradient(center, #252525, #121212);
+    background: -moz-radial-gradient(center, #252525, #121212);
+    background: radial-gradient(ellipse at center, #252525, #121212);
+    /* padding: 0 15px; */
+    position: relative;
 }
 
 .Map-container {
-	position: relative;
-	max-width: 900px;
-	margin: 0 auto;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #Map-svg {
-	width: 900px;
-	max-width: 100%;
-	height: auto;
+    width: 900px;
+    max-width: 100%;
+    height: auto;
 }

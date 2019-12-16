@@ -1,33 +1,35 @@
 {
-  "name": "enigmaweb",
-  "version": "1.0.0",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "http": "^0.0.0",
-    "nodemailer": "^6.4.0",
-    "path": "^0.12.7",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThatTechedGuy/EnigmaWeb.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThatTechedGuy/EnigmaWeb/issues"
-  },
-  "homepage": "https://github.com/ThatTechedGuy/EnigmaWeb#readme",
-  "description": ""
+    "name": "enigmaweb",
+    "version": "1.0.0",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "http": "^0.0.0",
+        "nodemailer": "^6.4.0",
+        "path": "^0.12.7",
+        "request": "^2.88.0",
+        "sass": "^1.23.7"
+    },
+    "devDependencies": {
+        "node-sass": "^4.13.0",
+        "nodemon": "^2.0.1"
+    },
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/lines.css -w",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ThatTechedGuy/EnigmaWeb.git"
+    },
+    "author": "Pranoy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ThatTechedGuy/EnigmaWeb/issues"
+    },
+    "homepage": "https://github.com/ThatTechedGuy/EnigmaWeb#readme",
+    "description": "Enigma Description Web"
 }
