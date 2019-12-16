@@ -191,6 +191,14 @@ h1 {
     opacity: 1;
 }
 
+.department-section {
+    border-top: solid 6px white;
+    border-bottom: solid 6px white;
+    outline: none;
+    border-color: #ffffff;
+    animation: pulse 2s infinite;
+}
+
 .department-section h1 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-size: 3.7rem;
@@ -240,6 +248,18 @@ h1 {
 
 .contribute-section h5 {
     font-weight: 400;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 white;
+    }
+    50% {
+        box-shadow: 15px 15px 10px white;
+    }
+    100% {
+        box-shadow: 0 0 0 white;
+    }
 }
 
 @-webkit-keyframes fade_move_down {
