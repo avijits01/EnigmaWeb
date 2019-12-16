@@ -39,14 +39,13 @@ h1 {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
-    -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);
     -webkit-animation: fade_move_down 4s ease-in-out infinite;
-    -moz-animation: fade_move_down 4s ease-in-out infinite;
     animation: fade_move_down 4s ease-in-out infinite;
 }
 
 .title-header {
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -68,13 +67,15 @@ h1 {
     height: 100%;
     z-index: -1;
     top: 0;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     left: 0;
     visibility: hidden;
 }
 
 .title-header:hover h1 {
-    filter: blur(1px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
 }
 
 .title-header:hover h1::before,
@@ -84,7 +85,8 @@ h1 {
 
 .title-header:hover h1::before {
     color: rgba(255, 0, 188, 0.8);
-    animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    -webkit-animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+            animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 
 .title-header:hover h1::after {
@@ -97,6 +99,7 @@ h1 {
 }
 
 .button-ghost-white a {
+    background-image: -webkit-gradient(linear, left top, right top, from(#deb4b4), color-stop(#ffffff), to(#deb4b4));
     background-image: linear-gradient(to right, #deb4b4, #ffffff, #deb4b4);
     padding: 1.5rem 3rem;
     background-size: 300% 100%;
@@ -104,6 +107,7 @@ h1 {
     text-transform: uppercase;
     border-radius: 0.2rem;
     font-weight: 500;
+    -webkit-transition: all 0.7s;
     transition: all 0.7s;
     text-decoration: none;
 }
@@ -111,6 +115,7 @@ h1 {
 .button-ghost-white a:hover {
     background-position: 100% 0;
     color: #121212;
+    -webkit-transition: all 0.7s;
     transition: all 0.7s;
 }
 
@@ -120,12 +125,14 @@ h1 {
     border: solid 1px white;
     padding: 2rem 3rem;
     color: #fff;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .button-raise a:hover {
     background: white;
     color: #121212;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -185,52 +192,73 @@ h1 {
     }
 }
 
-@-moz-keyframes fade_move_down {
+@keyframes fade_move_down {
     0% {
-        -moz-transform: translate(0, -10px) rotate(45deg);
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+                transform: translate(0, -10px) rotate(45deg);
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     100% {
-        -moz-transform: translate(0, 10px) rotate(45deg);
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+                transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
 }
 
-@keyframes fade_move_down {
+@-webkit-keyframes glitch {
     0% {
-        transform: translate(0, -10px) rotate(45deg);
-        opacity: 0;
+        -webkit-transform: translate(0);
+                transform: translate(0);
     }
-    50% {
-        opacity: 1;
+    20% {
+        -webkit-transform: translate(-3px, 3px);
+                transform: translate(-3px, 3px);
+    }
+    40% {
+        -webkit-transform: translate(-3px, -3px);
+                transform: translate(-3px, -3px);
+    }
+    60% {
+        -webkit-transform: translate(3px, 3px);
+                transform: translate(3px, 3px);
+    }
+    80% {
+        -webkit-transform: translate(3px, -3px);
+                transform: translate(3px, -3px);
     }
     100% {
-        transform: translate(0, 10px) rotate(45deg);
-        opacity: 0;
+        -webkit-transform: translate(0);
+                transform: translate(0);
     }
 }
 
 @keyframes glitch {
     0% {
-        transform: translate(0);
+        -webkit-transform: translate(0);
+                transform: translate(0);
     }
     20% {
-        transform: translate(-3px, 3px);
+        -webkit-transform: translate(-3px, 3px);
+                transform: translate(-3px, 3px);
     }
     40% {
-        transform: translate(-3px, -3px);
+        -webkit-transform: translate(-3px, -3px);
+                transform: translate(-3px, -3px);
     }
     60% {
-        transform: translate(3px, 3px);
+        -webkit-transform: translate(3px, 3px);
+                transform: translate(3px, 3px);
     }
     80% {
-        transform: translate(3px, -3px);
+        -webkit-transform: translate(3px, -3px);
+                transform: translate(3px, -3px);
     }
     100% {
-        transform: translate(0);
+        -webkit-transform: translate(0);
+                transform: translate(0);
     }
 }
 
