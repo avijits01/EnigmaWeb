@@ -1,3 +1,23 @@
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background: #252525;
+    z-index: 100;
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
