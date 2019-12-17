@@ -75,31 +75,32 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
+    <script>
+        TweenMax.from('.reboot-heading', 1, {
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from('.subtext', 1, {
+            delay: 1,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from('.enigma', 2, {
+            delay: 1.5,
+            opacity: 0,
+            y: 200,
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from('.hvr-bounce-to-top', 1, {
+            delay: 1.5,
+            opacity: 0,
+            y: 200,
+            ease: Expo.easeInOut,
+        });
+    </script>
 </body>
-<script>
-    TweenMax.from('.reboot-heading', 1, {
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut,
-    });
-    TweenMax.from('.subtext', 1, {
-        delay: 1,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut,
-    });
-    TweenMax.from('.enigma', 2, {
-        delay: 1.5,
-        opacity: 0,
-        y: 200,
-        ease: Expo.easeInOut,
-    });
-    TweenMax.from('.hvr-bounce-to-top', 1, {
-        delay: 1.5,
-        opacity: 0,
-        y: 200,
-        ease: Expo.easeInOut,
-    });
-</script>
+
 
 </html>
