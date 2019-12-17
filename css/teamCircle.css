@@ -157,6 +157,10 @@
     object-fit: cover;
 }
 
+.at-user__avatar img.grayscaled {
+    filter: grayscale(100%);
+}
+
 .at-user__name {
     color: #313435;
     font-family: 'Roboto', sans-serif;
