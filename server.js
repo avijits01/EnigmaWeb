@@ -12,47 +12,50 @@ app.use(helmet());
 
 app.listen(process.env.PORT || 5000);
 
+// ====================================================================================
+// ROUTING GET PATHS  =================================================================
+// ====================================================================================
+
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
   //__dirname : It will resolve to the project folder.
 });
-
 app.get("/index", function(req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
   //__dirname : It will resolve to the project folder.
 });
 
+
 app.get("/about", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
-
 app.get("/landing", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
-
 app.get("/enigma", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
-
 app.get("/homepage", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/landing.html"));
 });
 
+
 app.get("/register", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/registrations.html"));
 });
-
 app.get("/apply", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/registrations.html"));
 });
-
 app.get("/join", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/registrations.html"));
 });
-
-app.get("/registeration", function(req, res) {
+app.get("/registration", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/registrations.html"));
 });
+app.get("/registrations", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+});
+
 
 app.get("/air", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/AiR.html"));
@@ -63,13 +66,23 @@ app.get("/AiR", function(req, res) {
 app.get("/airesearch", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/AiR.html"));
 });
+app.get("/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb", function(req, res) {
+  res.sendFile(path.join(__dirname + "/pages/timeline.html"));
+});
+
+
 app.get("/team", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/team.html"));
 });
 
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname + "/pages/404.html"));
 });
+
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
