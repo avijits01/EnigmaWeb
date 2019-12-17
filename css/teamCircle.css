@@ -142,8 +142,8 @@
 }
 
 .at-user__avatar {
-    width: 98px;
-    height: 98px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     margin: 0 auto 20px;
     overflow: hidden;
