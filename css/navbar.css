@@ -1,6 +1,7 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .nav-link {
@@ -11,7 +12,7 @@
 
 .nav-link:first-child {
     margin-left: 2.5em;
-    margin-right: 4.3em;
+    margin-right: auto;
     padding-left: 0;
     padding-right: 0;
 }
@@ -20,9 +21,11 @@
 /* Adding Manipal Logo in the center of the navBar */
 
 .nav-img {
+    position: absolute;
+    top: calc((100% - 4rem) / 2);
+    left: calc(50vw - (4rem / 2));
+
     align-self: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .nav-img img {
@@ -37,10 +40,11 @@
 @media only screen and (max-width: 769px) {
     .nav-link {
         margin-right: 0.5em;
-        padding: 0;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
     .nav-link:first-child {
-        margin-right: 0;
+        margin-right: auto;
     }
 }
 
