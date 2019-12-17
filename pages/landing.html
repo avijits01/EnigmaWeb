@@ -26,6 +26,33 @@
     <link rel="stylesheet" type="text/css" href="../css/landingMobile.css">
     <link rel="stylesheet" type="text/css" href="../css/lines.css">
     <link rel="stylesheet" href="../css/navbar.css">
+
+    <style>
+        .headroom {
+            will-change: transform;
+            transition: transform 200ms linear;
+        }
+        .headroom--top {
+            border-bottom: none !important;
+        }
+        .headroom--pinned {
+            transform: translateY(0%);
+            border-bottom: 1px solid rgb(0, 211, 158);
+        }
+        .headroom--unpinned {
+            transform: translateY(-100%);
+            border-bottom: 1px solid rgb(0, 211, 158);
+        }
+
+        header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            background: #121212;
+            z-index: 100;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,8 +83,14 @@
             <h1 class="effect-1">ENIGMA</h1>
             <h6 class="effect-2 text-container">The very first initiative of its kind, thrives on catapulting efforts of highly driven individuals towards realizing projects that will not only prime them for universities abroad and set them up for their professional journey but make them
                 an essential part of our institution a more connected community than it has ever been.</h6>
-            <div class="button-raise" data-aos="fade-up" data-aos-duration="1000">
+            <!-- <div class="button-raise" data-aos="fade-up" data-aos-duration="1000">
                 <a href="/apply">Join us</a>
+            </div> -->
+            <div class="svg-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <svg height="60" width="220" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="60" width="220" />
+                    <div class="text">JOIN US</div>
+                </svg>
             </div>
 
         </div>
