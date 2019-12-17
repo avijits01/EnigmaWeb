@@ -32,3 +32,14 @@ function hideLoader() {
 }
 
 
+
+function showCountdownTimer(timeLeft) {
+  var downloadTimer = setInterval(function() {
+    timeLeft--;
+    document.getElementById("countdown").textContent = "Returning to Form in " + timeLeft + "s";
+    if(timeLeft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "";
+    }
+  }, 1000);
+}

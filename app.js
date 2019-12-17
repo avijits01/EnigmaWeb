@@ -91,9 +91,11 @@ function handleData(json) {
     showError();
   }
 
+  showCountdownTimer(timeLeft = 10); // Function from Loader.js
+
   setTimeout(() => {
     hideLoader();
-  }, 5000);
+  }, 10000);
 
   document.getElementById("error").innerHTML = warning;
 }
