@@ -1,0 +1,97 @@
+.dep-link-wrapper {
+	position: absolute;
+	bottom: 10px;
+	left: calc(0% + 101.485px);
+}
+
+.dep-link,
+.dep-link:visited,
+.dep-link:hover,
+.dep-link:active {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	transition: 0.5s color ease;
+	text-decoration: none;
+	color: #003b6f;
+	font-size: 0.2rem;
+}
+.dep-link:hover {
+	color: #000000;
+}
+.dep-link.before:before,
+.dep-link.after:after {
+	content: "";
+	transition: 0.5s all ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+}
+.dep-link.before:before {
+	top: -0.25em;
+}
+.dep-link.after:after {
+	bottom: -0.25em;
+}
+.dep-link.before:before,
+.dep-link.after:after {
+	height: 2px;
+	/* height: 0.35rem; */
+	width: 0;
+	background: #00c499;
+}
+.dep-link.before:hover:before,
+.dep-link.after:hover:after {
+	width: 100%;
+}
+.square {
+	box-sizing: border-box;
+	position: relative;
+	font-size: 1rem;
+	overflow: hidden;
+}
+.square .dep-link {
+	position: static;
+	font-size: 100%;
+	padding: 0.2em 0.4em;
+}
+.square:before,
+.square:after {
+	content: "";
+	box-sizing: border-box;
+	transition: 0.25s all ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	width: 2px;
+	/* width: 0.35rem; */
+	height: 0;
+	background: #00c499;
+}
+.square:before {
+	left: 0;
+	bottom: -0.2em;
+}
+
+.square:after {
+	right: 0;
+	top: -0.2em;
+}
+
+.square .dep-link:before {
+	left: 0;
+	transition: 0.25s all ease;
+}
+.square .dep-link:after {
+	right: 0;
+	transition: 0.25s all ease;
+}
+
+.square:hover:before,
+.square:hover:after {
+	height: calc(100% + 0.4em);
+}
+.square:hover .dep-link:before,
+.square:hover .dep-link:after {
+	width: 100%;
+}
