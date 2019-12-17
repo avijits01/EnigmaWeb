@@ -18,6 +18,12 @@
     transform: translateY(0);
 }
 
+.content img {
+    object-fit: cover;
+    height: 10%;
+    width: auto;
+}
+
 .face {
     transform: translate(0, -50%);
     height: 300px;
