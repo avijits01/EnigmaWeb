@@ -89,13 +89,13 @@ function handleData(json) {
   } else {
     formSubmitted = false;
     showError();
+
+    showCountdownTimer(timeLeft = 10); // Function from Loader.js
+
+    setTimeout(() => {
+      hideLoader();
+    }, 10000);
   }
-
-  showCountdownTimer(timeLeft = 10); // Function from Loader.js
-
-  setTimeout(() => {
-    hideLoader();
-  }, 10000);
 
   document.getElementById("error").innerHTML = warning;
 }
