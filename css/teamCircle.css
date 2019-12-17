@@ -100,7 +100,7 @@
 .at-column:hover {
     z-index: 1;
     background: white;
-    box-shadow: 0 8px 50px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 50px rgba(255, 255, 255, 0.788);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
@@ -112,6 +112,15 @@
     margin: 16px 0 0;
     opacity: 1;
 }
+
+.at-column:hover .at-user__name {
+    color: #313435;
+}
+
+.at-column:hover .at-user__title {
+    color: #6F808A;
+}
+
 
 @media (max-width: 800px) {
     .at-column {
@@ -162,7 +171,7 @@
 }
 
 .at-user__name {
-    color: #313435;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
@@ -170,7 +179,7 @@
 }
 
 .at-user__title {
-    color: #6F808A;
+    color: #bebebe;
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     line-height: 2.375rem;
