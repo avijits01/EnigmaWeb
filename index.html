@@ -11,18 +11,14 @@
     <link rel="icon" href="enigma.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap">
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <style>
 
-
-        
     </style>
 </head>
 
@@ -42,25 +38,20 @@
                 <div class="row row-flex-xs flex-sm-column-reverse flex-lg-row">
                     <div class="col col-xl-8 col-text order-1 text-sm-center text-lg-left">
                         <div class="container-lg-fluid">
-                        <h1>REBOOTING BIT BY BIT</h1>
-                        <div class="subtext mt-md-5">
-                            Since the internet has brought learning of various professional skills to our arm's
-                            reach, a very
-                            important skill is to know where to look for solutions to solve problems that one come's
-                            across in a
-                            learning a new skill, and to also contribute to the community by sharing what one has learnt
-                            while
-                            solving problems.</div>
-                        <div class="subtext mt-md-5">
-                            Want to know more about us? Click on explore more.
-                        </div>
+                            <h1 class="reboot-heading">REBOOTING BIT BY BIT</h1>
+                            <div class="subtext mt-md-5">
+                                Since the internet has brought learning of various professional skills to our arm's reach, a very important skill is to know where to look for solutions to solve problems that one come's across in a learning a new skill, and to also contribute to the
+                                community by sharing what one has learnt while solving problems.</div>
+                            <div class="subtext mt-md-5">
+                                Want to know more about us? Click on explore more.
+                            </div>
 
-                        <a class="hvr-bounce-to-top mt-5 mt-lg-3 px-5" style="margin-bottom: 5em;" href="landing.html">
+                            <a class="hvr-bounce-to-top mt-5 mt-lg-3 px-5" style="margin-bottom: 5em;" href="landing.html">
                             Explore
                         </a>
                         </div>
                     </div>
-                    <div class="col col-xl-4 order-2">
+                    <div class=" enigma col col-xl-4 order-2">
                         <img src="images/enigma.png" class="mx-auto d-block">
                     </div>
                 </div>
@@ -70,16 +61,40 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 </body>
+<script>
+    TweenMax.from('.reboot-heading', 1, {
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+
+    });
+    TweenMax.from('.subtext', 1, {
+        delay: 1,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+
+    });
+    TweenMax.from('.enigma', 2, {
+        delay: 1.5,
+        opacity: 0,
+        y: 200,
+        ease: Expo.easeInOut,
+
+    });
+    TweenMax.from('.hvr-bounce-to-top', 1, {
+        delay: 1.5,
+        opacity: 0,
+        y: 200,
+        ease: Expo.easeInOut,
+
+    });
+</script>
 
 </html>
