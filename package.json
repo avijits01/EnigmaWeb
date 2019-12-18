@@ -19,7 +19,7 @@
         "nodemon": "^2.0.2"
     },
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/lines.css -w",
+        "compile:sass": "node-sass public/sass/main.scss public/css/lines.css -w",
         "start": "node server.js"
     },
     "repository": {

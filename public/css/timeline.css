@@ -141,11 +141,11 @@ h6 {
 	width: 60px;
 	height: 60px;
 	margin: 0px auto;
-	background: transparent url(/images/stem-mask.png) repeat-y top center;
+	background: transparent url(/public/images/stem-mask.png) repeat-y top center;
 }
 .single-stem-icon.scroll-to-top {
 	cursor: pointer;
-	background-image: url(/images/scroll-to-top-icon.png);
+	background-image: url(/public/images/scroll-to-top-icon.png);
 }
 /*==========  Post wrapper ==========*/
 .post-wrapper {
@@ -197,25 +197,25 @@ h6 {
 }
 
 .post-wrapper .post.i1-icon .stem-overlay .icon {
-	background-image: url(/images/i1-icon.png);
+	background-image: url(/public/images/i1-icon.png);
 }
 .post-wrapper .post.i2-icon .stem-overlay .icon {
-	background-image: url(/images/i2-icon.png);
+	background-image: url(/public/images/i2-icon.png);
 }
 .post-wrapper .post.i3-icon .stem-overlay .icon {
-	background-image: url(/images/i3-icon.png);
+	background-image: url(/public/images/i3-icon.png);
 }
 .post-wrapper .post.i4-icon .stem-overlay .icon {
-	background-image: url(/images/i4-icon.png);
+	background-image: url(/public/images/i4-icon.png);
 }
 .post-wrapper .post.i5-icon .stem-overlay .icon {
-	background-image: url(/images/i5-icon.png);
+	background-image: url(/public/images/i5-icon.png);
 }
 .post-wrapper .post.i6-icon .stem-overlay .icon {
-	background-image: url(/images/i6-icon.png);
+	background-image: url(/public/images/i6-icon.png);
 }
 .post-wrapper .post.i7-icon .stem-overlay .icon {
-	background-image: url(/images/i7-icon.png);
+	background-image: url(/public/images/i7-icon.png);
 }
 
 .post-wrapper .post.music-icon .stem-overlay .icon {
@@ -250,7 +250,7 @@ h6 {
 	left: 0px;
 	right: 0px;
 	/* background: #242424; */
-	background: transparent url(/images/stem-mask.png) repeat-y top center;
+	background: transparent url(/public/images/stem-mask.png) repeat-y top center;
 }
 .post-wrapper .post .post-content {
 	opacity: 0.3;

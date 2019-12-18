@@ -7,7 +7,7 @@ const cors = require("cors");
 const request = require("request");
 const helmet = require("helmet");
 require("dotenv").config();
-app.use(express.static(__dirname + "/"));
+app.use(express.static(__dirname + "/public"));
 app.use(helmet());
 
 app.listen(process.env.PORT || 5000);
@@ -27,57 +27,54 @@ app.get("/index", function(req, res) {
 
 
 app.get("/about", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/landing.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
 app.get("/landing", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/landing.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
 app.get("/enigma", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/landing.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
 app.get("/homepage", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/landing.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
 
 
 app.get("/register", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 app.get("/apply", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 app.get("/join", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 app.get("/registration", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 app.get("/registrations", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/registrations.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 
 
 app.get("/air", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
 });
 app.get("/AiR", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
 });
 app.get("/airesearch", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/AiR.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
 });
-app.get("/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/timeline.html"));
-});
+
 
 
 app.get("/team", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/team.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/team.html"));
 });
 
-
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname + "/pages/404.html"));
+  res.sendFile(path.join(__dirname + "/public/pages/404.html"));
 });
 
 // ====================================================================================
