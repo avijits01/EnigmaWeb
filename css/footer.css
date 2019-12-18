@@ -23,7 +23,8 @@ footer{
 
 .footer-distributed{
 	background-color: #2c292f;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
@@ -93,7 +94,7 @@ footer{
 
 .footer-distributed .footer-center i{
     background-color:  #646464;
-    font font: Montserrat;
+    font: "Montserrat";
     font-family: montserrat;
 	color: #ffffff;
 	font-size: 25px;
