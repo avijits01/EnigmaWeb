@@ -62,8 +62,7 @@ function onSubmit(e) {
   fetch("https://enigmadev.herokuapp.com/submit", {
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
-      withCredentials: true,
+      "Content-Type": "application/json"
     },
     method: "post",
     body: JSON.stringify(formData)
