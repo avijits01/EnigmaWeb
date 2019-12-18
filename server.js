@@ -1,6 +1,16 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", req.headers.origin);
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 const router = express.Router();
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -30,7 +40,6 @@ app.get("/index", function(req, res) {
   //__dirname : It will resolve to the project folder.
 });
 
-
 app.get("/about", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
@@ -43,7 +52,6 @@ app.get("/enigma", function(req, res) {
 app.get("/homepage", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
-
 
 app.get("/register", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
@@ -61,7 +69,6 @@ app.get("/registrations", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
 });
 
-
 app.get("/air", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
 });
@@ -71,11 +78,12 @@ app.get("/AiR", function(req, res) {
 app.get("/airesearch", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
 });
-app.get("/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/timeline.html"));
-});
-
-
+app.get(
+  "/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb",
+  function(req, res) {
+    res.sendFile(path.join(__dirname + "/public/pages/timeline.html"));
+  }
+);
 
 app.get("/team", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/team.html"));
@@ -88,8 +96,6 @@ app.get("*", function(req, res) {
 // ====================================================================================
 // ====================================================================================
 // ====================================================================================
-
-
 
 app.post("/submit", function(req, res) {
   console.log(req.body);

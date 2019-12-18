@@ -62,7 +62,8 @@ function onSubmit(e) {
   fetch("https://enigmadev.in/submit", {
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      withCredentials: true,
     },
     method: "post",
     body: JSON.stringify(formData)
