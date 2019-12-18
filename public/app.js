@@ -59,7 +59,7 @@ function onSubmit(e) {
   console.log("SUBMITTING FORM.....");
   showLoader();
 
-  fetch("https://enigmadev.in/submit", {
+  fetch("https://enigmadev.herokuapp.com/submit", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
