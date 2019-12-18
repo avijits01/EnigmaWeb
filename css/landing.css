@@ -294,7 +294,7 @@ h1 {
 .contribute-section {
 	font-family: "Montserrat", "Roboto", sans-serif;
 	text-align: center;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .contribute-section h1 {
