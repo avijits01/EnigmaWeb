@@ -2,6 +2,9 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+
+
+
 const bodyParser = require("body-parser");
 const request = require("request");
 const helmet = require("helmet");
@@ -90,7 +93,7 @@ app.get("*", function(req, res) {
 // ====================================================================================
 
 
-app.post("/submit", cors(corsOptions), function(req, res) {
+app.post("/submit", function(req, res) {
   console.log(req.body);
 
   if (
