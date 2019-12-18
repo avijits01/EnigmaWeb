@@ -422,7 +422,8 @@ h1 {
 }
 
 .contain .card{
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	background-size: cover;
 	background-position-x: 0%;
 	background-position-y: 0%;
