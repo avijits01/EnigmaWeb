@@ -16,20 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.use(helmet());
 app.use(cors());
 
-app.options('/submit', cors());
-app.options('*', cors()) // include before other routes
-
-var whitelist = ["https://www.enigmadev.in", /\enigmadev\.in$/, /enigmadev\.in$/];
-var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
-
 app.listen(process.env.PORT || 5000);
 
 
