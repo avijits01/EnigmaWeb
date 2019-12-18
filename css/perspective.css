@@ -1,9 +1,12 @@
 .perspective {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   color: #dedede;
   font-size: 45px;
   text-transform: uppercase;
   letter-spacing: -2px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -16,19 +19,23 @@
   height: 50px;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .perspective-text p {
   line-height: 50px;
   height: 50px;
   margin: 0;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .perspective-text:nth-child(odd) {
-  transform: skew(60deg, -30deg) scaleY(0.667);
+  -webkit-transform: skew(60deg, -30deg) scaleY(0.667);
+          transform: skew(60deg, -30deg) scaleY(0.667);
 }
 .perspective-text:nth-child(even) {
-  transform: skewY(-30deg) scaleY(1.337);
+  -webkit-transform: skewY(-30deg) scaleY(1.337);
+          transform: skewY(-30deg) scaleY(1.337);
 }
 .perspective-text:nth-child(1) {
   left: 29px;
@@ -46,5 +53,6 @@
   left: 145px;
 }
 .perspective:hover p {
-  transform: translate(0, -50px);
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
 }

@@ -87,7 +87,8 @@
         text-align: left;
         margin-right: auto;
         margin-left: auto;
-        transform: translateX(-22vw);
+        -webkit-transform: translateX(-22vw);
+                transform: translateX(-22vw);
     }
     .perspective-text p {
         font-size: inherit;

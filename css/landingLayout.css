@@ -93,11 +93,15 @@
 	.goal-section {
 		padding: 0;
 		padding-left: 3em;
-		flex: 50%;
+		-webkit-box-flex: 50%;
+		    -ms-flex: 50%;
+		        flex: 50%;
 	}
 
 	.step-section {
-		flex: 50%;
+		-webkit-box-flex: 50%;
+		    -ms-flex: 50%;
+		        flex: 50%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;

@@ -45,6 +45,7 @@ h6 {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6fc7d4), to(#39acbd));
 	background-image: linear-gradient(to bottom, #6fc7d4 0%, #39acbd 100%);
 }
 .main-content {
@@ -130,7 +131,8 @@ h6 {
 	background: #39acbd;
 	/* background: #fff; */
 	height: 50%;
-	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
 }
 
 /* Edit Point for the Foreground of the the Stem Top Padding */
@@ -252,7 +254,8 @@ h6 {
 }
 .post-wrapper .post .post-content {
 	opacity: 0.3;
-	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	        transition-duration: 0.4s;
 	-webkit-transform: none;
 	transform: none;
 }
@@ -261,8 +264,10 @@ h6 {
 	margin: 0px 0px 15px 0px;
 	letter-spacing: 1px;
 	opacity: 0;
-	transition-duration: 1s;
-	transition-delay: 0.2s;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+	-webkit-transition-delay: 0.2s;
+	        transition-delay: 0.2s;
 	-webkit-transform: translateY(-5px);
 	transform: translateY(-5px);
 }
