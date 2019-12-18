@@ -22,18 +22,23 @@
 
     <style>
         /* This resets the Smart Nav for this page, which is required to play nicely with the svg.divider */
+        * {
+            border: 1px dashed red;
+        }
+
         header {
             position: static !important;
             top: reset !important;
             left: reset !important;
-            width: 100vw !important;
             background: #f5f5f5 !important;
             z-index: reset !important;
         }
+
         /* This inverts the navbar colors to make it compatible with this page's theme */
         .nav-bar {
             filter: invert(100%);
         }
+        
     </style>
 </head>
 
@@ -284,23 +289,20 @@
             </div>
             <div class="status-text-sub">
                 Try resubmitting the form and make sure: <br>• All required fields are filled<br>• Captcha is
-                completed<br><br><br>Otherwise, contact the Enigma team.<br><br><br><div id="countdown"></div>
+                completed<br><br><br>Otherwise, contact the Enigma team.<br><br><br>
+                <div id="countdown"></div>
             </div>
         </div>
     </div>
-    <!-- <header>
-        <div class="d-flex flex-row mb-3">
-            <div class="col p-2 mr-auto"><a href="index.html">ENIGMA</a></div>
-            <div class="col-auto p-2"><a href="team.html">TEAM</a></div>
-            <div class="col-auto p-2 mr-md-2"><a href="landing.html">ABOUT</a></div>
-        </div>
-    </header> -->
+
     <header>
         <div class="nav-bar">
-            <div class="nav-link"><a href="/">ENIGMA</a></div>
+            <div class="nav-link nav-logo"><a href="/">ENIGMA</a></div>
             <div class="nav-img"><img src="../images/mit-logo.png" alt="Manipal Logo"></div>
-            <div class="nav-link"><a href="/team">TEAM</a></div>
-            <div class="nav-link"><a href="/about">ABOUT</a></div>
+            <div class="nav-section">
+                <div class="nav-link"><a href="/team">TEAM</a></div>
+                <div class="nav-link"><a href="/about">ABOUT</a></div>
+            </div>
         </div>
     </header>
 

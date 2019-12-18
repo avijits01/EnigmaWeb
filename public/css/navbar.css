@@ -1,4 +1,5 @@
 /* ADDING SMART NAV BAR STYLING ============================================ */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 .headroom {
 	will-change: transform;
@@ -25,10 +26,19 @@ header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	width: 100vw;
 	background: #121212;
 	z-index: 100;
 }
+
+.nav-link{
+	margin-right: 2em;
+	padding: 0;
+	font-family: "Montserrat", "Roboto", sans-serif;
+	letter-spacing: 2px;
+	line-height: 80px;
+	font-size: 12px;
+}
+
 
 /* ========================================================================= */
 
@@ -40,38 +50,36 @@ header {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	position: relative;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-family: "Montserrat", "Roboto", sans-serif;
+	letter-spacing: 2px;
 }
 
-.nav-link {
-	/* margin-right: 2em; */
-	padding-left: 1em;
-	padding-right: 1em;
+
+.nav-section{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
 }
 
-.nav-link:first-child {
-	margin-left: 2.5em;
-	margin-right: auto;
-	padding-left: 0;
-	padding-right: 0;
-}
 
 /* Change this margin-right for the last element in Nav-Bar [$!1] */
-.nav-link:last-child {
-	margin-right: 1em;
-}
+
 
 /* Adding Manipal Logo in the center of the navBar */
 
-.nav-img {
-	position: absolute;
-	top: calc((100% - 4rem) / 2);
-	left: calc(50vw - (4rem / 2));
-
-	-ms-flex-item-align: center;
-
-	align-self: center;
-}
 
 .nav-img img {
 	max-width: 100%;
@@ -82,18 +90,7 @@ header {
 	margin: 0;
 }
 
-@media only screen and (max-width: 769px) {
-	.nav-link {
-		margin-right: 0.5em;
-		padding-right: 0.5em;
-		padding-left: 0.5em;
-	}
-	.nav-link:first-child {
-		margin-right: auto;
-	}
-}
 
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 .nav-bar a {
 	text-decoration: none;
 	color: whitesmoke;
@@ -136,13 +133,13 @@ header {
 
 /* Removing the Underline Effect for the Branding Text */
 
-.nav-link:first-child:hover a::after {
+.nav-logo:hover a::after {
 	width: 0%;
 	left: 50%;
 }
 /* =================================================== */
 
-.nav-link:first-child {
+.nav-bar .nav-logo {
 	font-family: "Montserrat", "Roboto", sans-serif;
 	line-height: 80px;
 	color: #fff;
@@ -150,4 +147,15 @@ header {
 	letter-spacing: 3px;
 	font-weight: 900;
 	text-transform: uppercase;
+	margin-left: 2em;
+}
+
+@media only screen and (max-width:600px){
+	.nav-link{
+		margin-right: 1em;
+	}
+
+	.nav-logo{
+		margin-left: 1em;
+	}
 }

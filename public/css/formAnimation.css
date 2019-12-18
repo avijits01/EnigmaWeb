@@ -23,6 +23,7 @@ header {
 }
 header div.d-flex.flex-row.mb-3 {
 	margin: 0 !important;
+	padding: 0;
 }
 
 body::after {

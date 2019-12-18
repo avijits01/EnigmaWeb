@@ -13,35 +13,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.p-2 {
-	color: black;
-	font-size: 12px;
-	letter-spacing: 2px;
-	font-family: "Poppins";
-	line-height: 80px;
-}
 
-.p-2:first-child {
-	font-family: "Poppins";
-	line-height: 80px;
-	margin-left: 2em;
-	color: black;
-	font-size: 15px;
-	letter-spacing: 3px;
-	font-weight: 900;
-	text-transform: uppercase;
-}
-
-.modal p {
-	color: black;
-}
-
-.modal h4 {
-	color: black;
-}
-.modal-content {
-	text-align: left;
-}
 
 p#error {
 	margin-top: 1em;
