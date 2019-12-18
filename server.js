@@ -116,7 +116,7 @@ app.get("*", function(req, res) {
 // ====================================================================================
 // ====================================================================================
 
-app.post("/submit", function(req, res) {
+app.post("/submit", cors(corsOptions), function(req, res) {
   console.log(req.body);
 
   if (
