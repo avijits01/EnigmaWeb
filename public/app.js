@@ -72,7 +72,16 @@ function onSubmit(e) {
       console.log(data);
       handleData(data);
     }) //log the data;
-    .catch(err => console.log(err));
+    .catch(err => {
+      console.log(err);
+      showError();
+
+      showCountdownTimer((timeLeft = 10)); // Function from Loader.js
+
+      setTimeout(() => {
+        hideLoader();
+      }, 10000);
+    });
 }
 
 function handleData(json) {
@@ -90,7 +99,7 @@ function handleData(json) {
     formSubmitted = false;
     showError();
 
-    showCountdownTimer(timeLeft = 10); // Function from Loader.js
+    showCountdownTimer((timeLeft = 10)); // Function from Loader.js
 
     setTimeout(() => {
       hideLoader();
