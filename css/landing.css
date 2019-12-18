@@ -133,6 +133,10 @@ h1 {
 	top: -48px;
 	position: relative;
 }
+.text a {
+	text-decoration: none;
+	color: inherit;
+}
 .svg-wrapper:hover .shape {
 	stroke-width: 2px;
 	stroke-dashoffset: 0;
