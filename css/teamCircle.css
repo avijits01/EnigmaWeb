@@ -97,6 +97,7 @@
 .at-column {
     z-index: 0;
     position: relative;
+    border: 1px solid white;
     background: #FFF;
     -webkit-box-shadow: 0 0 0 1px #E2E9ED;
             box-shadow: 0 0 0 1px #E2E9ED;
