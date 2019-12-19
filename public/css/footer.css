@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font: 16px/1.6 Poppins, sans-serif;
+  font: 16px/1.6 "Poppins", sans-serif;
 }
 
 /* The footer is fixed to the bottom of the page */
@@ -42,14 +42,13 @@ footer {
 /* Footer left */
 
 .footer-distributed .footer-left {
-  font: Montserrat;
-  font-family: montserrat;
+  font-family: "Montserrat", sans-serif;
   width: 30%;
 }
 
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px "Cookie", cursive;
+  font: normal 36px "Montserrat";
   margin: 0;
 }
 
@@ -60,7 +59,7 @@ footer {
 }
 
 .footer-distributed h3 span {
-  color: #e0ac1c;
+  color: #19f6e8;
 }
 
 /* Footer links */
@@ -125,7 +124,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: #e0ac1c;
+  color: #19f6e8;
   text-decoration: none;
 }
 
@@ -198,3 +197,4 @@ footer {
 .fa-envelope{
   background: url('../images/email.png');
 }
+
