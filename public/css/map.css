@@ -24,39 +24,43 @@ body *:after {
 } */
 
 .Map-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    min-height: 100%;
-    /* background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%); */
-    background: #121212;
-    /* background: -webkit-radial-gradient(center, #252525, #121212); */
-    /* background: -moz-radial-gradient(center, #252525, #121212); */
-    /* background: radial-gradient(ellipse at center, #252525, #121212); */
-    /* padding: 0 15px; */
-    position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 100%;
+	/* background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%); */
+	background: #121212;
+	/* background: -webkit-radial-gradient(center, #252525, #121212); */
+	/* background: -moz-radial-gradient(center, #252525, #121212); */
+	/* background: radial-gradient(ellipse at center, #252525, #121212); */
+	/* padding: 0 15px; */
+	position: relative;
+	margin-top: 2em;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .Map-container {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 #Map-svg {
-    width: 900px;
-    max-width: 100%;
-    height: auto;
+	width: 900px;
+	max-width: 100%;
+	height: auto;
 }
