@@ -18,3 +18,7 @@ a:hover {
 p#error {
 	margin-top: 1em;
 }
+
+select,option{
+	color: black;
+}
