@@ -61,21 +61,21 @@ app.get("/homepage", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
 });
 
-app.get("/register", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
-});
-app.get("/apply", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
-});
-app.get("/join", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
-});
-app.get("/registration", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
-});
-app.get("/registrations", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
-});
+// app.get("/register", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/apply", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/join", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/registration", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/registrations", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
 
 app.get("/air", function(req, res) {
   res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
