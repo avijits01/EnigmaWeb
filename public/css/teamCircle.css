@@ -18,7 +18,9 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: #FFF;
+    /* background: #FFF; */
+    background: #fff0;
+    justify-content: center;
     border: 1px solid #000;
 }
 
