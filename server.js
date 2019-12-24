@@ -1,1 +1,219 @@
-var _0x22b2=['static','/public','use','join','json','urlencoded','http://enigmadev.in','https://www.enigmadev.in','https://enigmadev.in','https://enigmadev.in/apply','indexOf','Not\x20allowed\x20by\x20CORS','sendFile','/public/index.html','get','/index','/public/pages/landing.html','/landing','/enigma','/homepage','/air','/public/pages/AiR.html','/AiR','/airesearch','/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb','/public/pages/timeline.html','/team','/public/pages/team.html','/public/pages/codex.html','/webappdev','/development','/public/pages/404.html','post','/submit','log','body','name','email','situation','phoneNumber','g-recaptcha-response','Captcha\x20was\x20not\x20filled.','env','RECAPTCHA','https://www.google.com/recaptcha/api/siteverify?secret=','&response=','&remoteip=','connection','remoteAddress','parse','success','CAPTCHA\x20SUCCESS?','Failed\x20to\x20verify\x20captcha.','REACHED\x20FUNCTION\x20NODEMAILER','createTransport','gmail','smtp.gmail.com','icasapp.team@gmail.com','PASSWORD','stringify','enigmadev.forms@gmail.com','[RECRUITMENT\x20FORM]','sendMail','Failed\x20to\x20submit\x20the\x20form.','Form\x20Submitted','while\x20(true)\x20{}','counter','length','constructor','gger','call','action','stateObject','apply','function\x20*\x5c(\x20*\x5c)','\x5c+\x5c+\x20*(?:_0x(?:[a-f0-9]){4,6}|(?:\x5cb|\x5cd)[a-z0-9]{1,4}(?:\x5cb|\x5cd))','init','test','express','path','body-parser','request','helmet','cors'];(function(_0x35f8c2,_0x4798a3){var _0x5d9df6=function(_0xe62b4a){while(--_0xe62b4a){_0x35f8c2['push'](_0x35f8c2['shift']());}};var _0x3c84b6=function(){var _0x3b78e3={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x5c26e6,_0x4d396c,_0x2bd0f9,_0x3504b1){_0x3504b1=_0x3504b1||{};var _0x35ecd4=_0x4d396c+'='+_0x2bd0f9;var _0x45c015=0x0;for(var _0x45c015=0x0,_0x1f70af=_0x5c26e6['length'];_0x45c015<_0x1f70af;_0x45c015++){var _0x262ef9=_0x5c26e6[_0x45c015];_0x35ecd4+=';\x20'+_0x262ef9;var _0x29ce56=_0x5c26e6[_0x262ef9];_0x5c26e6['push'](_0x29ce56);_0x1f70af=_0x5c26e6['length'];if(_0x29ce56!==!![]){_0x35ecd4+='='+_0x29ce56;}}_0x3504b1['cookie']=_0x35ecd4;},'removeCookie':function(){return'dev';},'getCookie':function(_0x16261e,_0x527840){_0x16261e=_0x16261e||function(_0x173baf){return _0x173baf;};var _0x124369=_0x16261e(new RegExp('(?:^|;\x20)'+_0x527840['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));var _0x2e512c=function(_0x2263d6,_0x303752){_0x2263d6(++_0x303752);};_0x2e512c(_0x5d9df6,_0x4798a3);return _0x124369?decodeURIComponent(_0x124369[0x1]):undefined;}};var _0x303c9d=function(){var _0x28a8cf=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x28a8cf['test'](_0x3b78e3['removeCookie']['toString']());};_0x3b78e3['updateCookie']=_0x303c9d;var _0xba09d5='';var _0x5be944=_0x3b78e3['updateCookie']();if(!_0x5be944){_0x3b78e3['setCookie'](['*'],'counter',0x1);}else if(_0x5be944){_0xba09d5=_0x3b78e3['getCookie'](null,'counter');}else{_0x3b78e3['removeCookie']();}};_0x3c84b6();}(_0x22b2,0x1ed));var _0x2f20=function(_0x886195,_0x48a0d4){_0x886195=_0x886195-0x0;var _0x4ddf84=_0x22b2[_0x886195];return _0x4ddf84;};var _0xe15689=function(){var _0x833cc1=!![];return function(_0x544bc9,_0x844238){var _0xbbc858=_0x833cc1?function(){if(_0x844238){var _0x132927=_0x844238['apply'](_0x544bc9,arguments);_0x844238=null;return _0x132927;}}:function(){};_0x833cc1=![];return _0xbbc858;};}();var _0x45a528=_0xe15689(this,function(){var _0x53cea1=function(){return'\x64\x65\x76';},_0x5652fb=function(){return'\x77\x69\x6e\x64\x6f\x77';};var _0x315d3f=function(){var _0xc2ec40=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!_0xc2ec40['\x74\x65\x73\x74'](_0x53cea1['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x2d55f9=function(){var _0x3aa120=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return _0x3aa120['\x74\x65\x73\x74'](_0x5652fb['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0xba4b9b=function(_0x363f91){var _0x19a88a=~-0x1>>0x1+0xff%0x0;if(_0x363f91['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===_0x19a88a)){_0x19551a(_0x363f91);}};var _0x19551a=function(_0xc17106){var _0xcf80a0=~-0x4>>0x1+0xff%0x0;if(_0xc17106['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==_0xcf80a0){_0xba4b9b(_0xc17106);}};if(!_0x315d3f()){if(!_0x2d55f9()){_0xba4b9b('\x69\x6e\x64\u0435\x78\x4f\x66');}else{_0xba4b9b('\x69\x6e\x64\x65\x78\x4f\x66');}}else{_0xba4b9b('\x69\x6e\x64\u0435\x78\x4f\x66');}});_0x45a528();var _0x2e43f6=function(){var _0x5be8af=!![];return function(_0x9d9015,_0x448e5e){var _0x40fe73=_0x5be8af?function(){if(_0x448e5e){var _0x30e1bf=_0x448e5e[_0x2f20('0x0')](_0x9d9015,arguments);_0x448e5e=null;return _0x30e1bf;}}:function(){};_0x5be8af=![];return _0x40fe73;};}();(function(){_0x2e43f6(this,function(){var _0x5b3663=new RegExp(_0x2f20('0x1'));var _0x1c6fc5=new RegExp(_0x2f20('0x2'),'i');var _0x5bd112=_0x1a301b(_0x2f20('0x3'));if(!_0x5b3663[_0x2f20('0x4')](_0x5bd112+'chain')||!_0x1c6fc5[_0x2f20('0x4')](_0x5bd112+'input')){_0x5bd112('0');}else{_0x1a301b();}})();}());const express=require(_0x2f20('0x5'));const path=require(_0x2f20('0x6'));const app=express();const bodyParser=require(_0x2f20('0x7'));const request=require(_0x2f20('0x8'));const helmet=require(_0x2f20('0x9'));var cors=require(_0x2f20('0xa'));app['use'](express[_0x2f20('0xb')](__dirname+_0x2f20('0xc')));app[_0x2f20('0xd')](express[_0x2f20('0xb')](path[_0x2f20('0xe')](__dirname,'js')));app['use'](bodyParser[_0x2f20('0xf')]());app['use'](bodyParser[_0x2f20('0x10')]({'extended':!![]}));app[_0x2f20('0xd')](helmet());app[_0x2f20('0xd')](cors());var whitelist=[_0x2f20('0x11'),_0x2f20('0x12'),_0x2f20('0x13'),'http://enigmadev.in',_0x2f20('0x14'),/\.enigmadev\.in$/];var corsOptions={'origin':function(_0x140d23,_0x383298){if(whitelist[_0x2f20('0x15')](_0x140d23)!==-0x1){_0x383298(null,!![]);}else{_0x383298(new Error(_0x2f20('0x16')));}}};app['listen'](process['env']['PORT']||0x1388);app['get']('/',function(_0x277dcd,_0x46fd8e){_0x46fd8e[_0x2f20('0x17')](path['join'](__dirname+_0x2f20('0x18')));});app[_0x2f20('0x19')](_0x2f20('0x1a'),function(_0x22ea3d,_0x123ade){_0x123ade['sendFile'](path['join'](__dirname+_0x2f20('0x18')));});app[_0x2f20('0x19')]('/about',function(_0x3eec97,_0x21d4f9){_0x21d4f9['sendFile'](path[_0x2f20('0xe')](__dirname+_0x2f20('0x1b')));});app[_0x2f20('0x19')](_0x2f20('0x1c'),function(_0x3d8576,_0x4a0d3d){_0x4a0d3d[_0x2f20('0x17')](path['join'](__dirname+_0x2f20('0x1b')));});app[_0x2f20('0x19')](_0x2f20('0x1d'),function(_0x2b0c89,_0x1a0364){_0x1a0364[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x1b')));});app[_0x2f20('0x19')](_0x2f20('0x1e'),function(_0x2fcbcd,_0xb96573){_0xb96573['sendFile'](path['join'](__dirname+_0x2f20('0x1b')));});app['get'](_0x2f20('0x1f'),function(_0x154898,_0x20493a){_0x20493a[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x20')));});app[_0x2f20('0x19')](_0x2f20('0x21'),function(_0x33191d,_0x1035c7){_0x1035c7[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x20')));});app[_0x2f20('0x19')](_0x2f20('0x22'),function(_0xb9ecc7,_0x380166){_0x380166[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x20')));});app['get'](_0x2f20('0x23'),function(_0x5a9d3a,_0x12d989){_0x12d989[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x24')));});app[_0x2f20('0x19')](_0x2f20('0x25'),function(_0x223932,_0x414d70){_0x414d70[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x26')));});app[_0x2f20('0x19')]('/codex',function(_0x1a5b8e,_0x214831){_0x214831[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x27')));});app[_0x2f20('0x19')](_0x2f20('0x28'),function(_0x2adb57,_0x58ac15){_0x58ac15[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+'/public/pages/codex.html'));});app[_0x2f20('0x19')](_0x2f20('0x29'),function(_0x33b4ae,_0x25418a){_0x25418a[_0x2f20('0x17')](path['join'](__dirname+_0x2f20('0x27')));});app[_0x2f20('0x19')]('*',function(_0x3dcaf0,_0x484a6b){_0x484a6b[_0x2f20('0x17')](path[_0x2f20('0xe')](__dirname+_0x2f20('0x2a')));});app[_0x2f20('0x2b')](_0x2f20('0x2c'),cors(corsOptions),function(_0x339dee,_0x2a5ae6){console[_0x2f20('0x2d')](_0x339dee[_0x2f20('0x2e')]);if(!_0x339dee[_0x2f20('0x2e')][_0x2f20('0x2f')]||!_0x339dee[_0x2f20('0x2e')][_0x2f20('0x30')]||!_0x339dee[_0x2f20('0x2e')][_0x2f20('0x31')]||!_0x339dee[_0x2f20('0x2e')]['regNo']||!_0x339dee[_0x2f20('0x2e')][_0x2f20('0x32')])if(_0x339dee[_0x2f20('0x2e')][_0x2f20('0x33')]===undefined||_0x339dee[_0x2f20('0x2e')]['g-recaptcha-response']===''||_0x339dee[_0x2f20('0x2e')][_0x2f20('0x33')]===null){return _0x2a5ae6[_0x2f20('0xf')]({'success':![],'captcha':![],'mail':![],'error':_0x2f20('0x34')});}var _0x198238=process[_0x2f20('0x35')][_0x2f20('0x36')];var _0xd1f98e=_0x2f20('0x37')+_0x198238+_0x2f20('0x38')+_0x339dee[_0x2f20('0x2e')][_0x2f20('0x33')]+_0x2f20('0x39')+_0x339dee[_0x2f20('0x3a')][_0x2f20('0x3b')];request(_0xd1f98e,function(_0x253dda,_0x1a0a71,_0x20ef2b){_0x20ef2b=JSON[_0x2f20('0x3c')](_0x20ef2b);if(_0x20ef2b[_0x2f20('0x3d')]!==undefined&&!_0x20ef2b[_0x2f20('0x3d')]){console[_0x2f20('0x2d')](_0x2f20('0x3e'));}else{return _0x2a5ae6['json']({'success':![],'captcha':!![],'mail':![],'error':_0x2f20('0x3f')});}});const _0x365f46=require('nodemailer');console['log'](_0x2f20('0x40'));var _0x8bce3a=_0x365f46[_0x2f20('0x41')]({'service':_0x2f20('0x42'),'host':_0x2f20('0x43'),'secureConnection':![],'auth':{'user':_0x2f20('0x44'),'pass':process[_0x2f20('0x35')][_0x2f20('0x45')]},'tls':{'rejectUnauthorized':![]}});var _0x1725be=JSON[_0x2f20('0x46')](_0x339dee[_0x2f20('0x2e')],null,'\x09');_0x1725be=JSON['stringify'](_0x339dee[_0x2f20('0x2e')],null,0x4);var _0x218835={'from':_0x2f20('0x44'),'to':_0x2f20('0x47'),'subject':_0x2f20('0x48')+_0x339dee[_0x2f20('0x2e')][_0x2f20('0x30')]+'->'+_0x339dee[_0x2f20('0x2e')]['name'],'text':_0x1725be};_0x8bce3a[_0x2f20('0x49')](_0x218835,function(_0x15d6b2,_0x1d545c){if(_0x15d6b2){console['log'](_0x15d6b2);return _0x2a5ae6[_0x2f20('0xf')]({'success':![],'captcha':!![],'mail':!![],'error':_0x2f20('0x4a')});}else{return _0x2a5ae6[_0x2f20('0xf')]({'success':!![],'captcha':!![],'mail':!![],'error':_0x2f20('0x4b')});}});});function _0x1a301b(_0x20b7b9){function _0x3e74dc(_0x32502b){if(typeof _0x32502b==='string'){return function(_0x44e996){}['constructor'](_0x2f20('0x4c'))[_0x2f20('0x0')](_0x2f20('0x4d'));}else{if((''+_0x32502b/_0x32502b)[_0x2f20('0x4e')]!==0x1||_0x32502b%0x14===0x0){(function(){return!![];}[_0x2f20('0x4f')]('debu'+_0x2f20('0x50'))[_0x2f20('0x51')](_0x2f20('0x52')));}else{(function(){return![];}['constructor']('debu'+_0x2f20('0x50'))['apply'](_0x2f20('0x53')));}}_0x3e74dc(++_0x32502b);}try{if(_0x20b7b9){return _0x3e74dc;}else{_0x3e74dc(0x0);}}catch(_0x525833){}}
+const express = require("express");
+const path = require("path");
+const app = express();
+
+const bodyParser = require("body-parser");
+const request = require("request");
+const helmet = require("helmet");
+var cors = require("cors");
+
+//app.use(allowCrossDomain);
+app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "js")));
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(helmet());
+app.use(cors());
+
+var whitelist = [
+  "http://enigmadev.in",
+  "https://www.enigmadev.in",
+  "https://enigmadev.in",
+  "http://enigmadev.in",
+  "https://enigmadev.in/apply",
+  /\.enigmadev\.in$/
+];
+var corsOptions = {
+  origin: function(origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+};
+
+app.listen(process.env.PORT || 5000);
+
+// ====================================================================================
+// ROUTING GET PATHS  =================================================================
+// ====================================================================================
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+  //__dirname : It will resolve to the project folder.
+});
+app.get("/index", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+  //__dirname : It will resolve to the project folder.
+});
+
+app.get("/about", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
+});
+app.get("/landing", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
+});
+app.get("/enigma", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
+});
+app.get("/homepage", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/landing.html"));
+});
+
+// app.get("/register", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/apply", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/join", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/registration", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+// app.get("/registrations", function(req, res) {
+//   res.sendFile(path.join(__dirname + "/public/pages/registrations.html"));
+// });
+
+app.get("/air", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
+});
+app.get("/AiR", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
+});
+app.get("/airesearch", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/AiR.html"));
+});
+app.get(
+  "/sMYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprrLHGGmusscYaa6yxxhprvLkgb",
+  function(req, res) {
+    res.sendFile(path.join(__dirname + "/public/pages/timeline.html"));
+  }
+);
+app.get('/air-taskphase',function(req,res){  
+    res.redirect("https://alphamineron.github.io/mlinitiative/");
+})
+
+app.get("/team", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/team.html"));
+});
+
+app.get("/codex", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/codex.html"));
+});
+
+app.get("/webappdev", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/codex.html"));
+});
+
+app.get("/development", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/codex.html"));
+});
+
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/pages/404.html"));
+});
+
+// ====================================================================================
+// ====================================================================================
+// ====================================================================================
+
+app.post("/submit", cors(corsOptions), function(req, res) {
+  console.log(req.body);
+
+  if (
+    !req.body.name ||
+    !req.body.email ||
+    !req.body.situation ||
+    !req.body.regNo ||
+    !req.body.phoneNumber
+  )
+    if (
+      req.body["g-recaptcha-response"] === undefined ||
+      req.body["g-recaptcha-response"] === "" ||
+      req.body["g-recaptcha-response"] === null
+    ) {
+      // g-recaptcha-response is the key that browser will generate upon form submit.
+      // if its blank or null means user has not selected the captcha, so return the error.
+      return res.json({
+        success: false,
+        captcha: false,
+        mail: false,
+        error: "Captcha was not filled."
+      });
+    }
+  // Put your secret key here.
+  var secretKey = process.env.RECAPTCHA;
+  // req.connection.remoteAddress will provide IP address of connected user.
+  var verificationUrl =
+    "https://www.google.com/recaptcha/api/siteverify?secret=" +
+    secretKey +
+    "&response=" +
+    req.body["g-recaptcha-response"] +
+    "&remoteip=" +
+    req.connection.remoteAddress;
+  // Hitting GET request to the URL, Google will respond with success or error scenario.
+  request(verificationUrl, function(error, response, body) {
+    body = JSON.parse(body);
+    // Success will be true or false depending upon captcha validation.
+    if (body.success !== undefined && !body.success) {
+      console.log("CAPTCHA SUCCESS?");
+    } else {
+      return res.json({
+        success: false,
+        captcha: true,
+        mail: false,
+        error: "Failed to verify captcha."
+      });
+    }
+  });
+
+  const nodemailer = require("nodemailer");
+  console.log("REACHED FUNCTION NODEMAILER");
+
+  var transporter = nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    secureConnection: false,
+    auth: {
+      user: "icasapp.team@gmail.com",
+      pass: process.env.PASSWORD
+    },
+    tls: {
+      rejectUnauthorized: false
+    }
+  });
+
+  var mail = JSON.stringify(req.body, null, "\t"); // stringify with tabs inserted at each level
+  mail = JSON.stringify(req.body, null, 4); // stringify with 4 spaces at each level
+
+  var mailOptions = {
+    from: "icasapp.team@gmail.com",
+    to: "enigmadev.forms@gmail.com",
+    subject: "[RECRUITMENT FORM]" + req.body.email + "->" + req.body.name,
+    text: mail
+  };
+
+  transporter.sendMail(mailOptions, function(err, info) {
+    if (err) {
+      console.log(err);
+      return res.json({
+        success: false,
+        captcha: true,
+        mail: true,
+        error: "Failed to submit the form."
+      });
+    } else {
+      return res.json({
+        success: true,
+        captcha: true,
+        mail: true,
+        error: "Form Submitted"
+      });
+    }
+  });
+});
+
+//add the routerlog
