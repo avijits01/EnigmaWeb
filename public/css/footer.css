@@ -30,6 +30,7 @@ footer {
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
+  padding-bottom: 0;
 }
 
 .footer-distributed .footer-left,
