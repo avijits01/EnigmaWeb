@@ -122,6 +122,7 @@ app.get("*", function(req, res) {
 
 app.post("/submit", cors(corsOptions), function(req, res) {
   console.log(req.body);
+  req.body.phase = 2;   // Manually Adding an Identifier for distinguishing TaskPhase entries
 
   if (
     !req.body.name ||
